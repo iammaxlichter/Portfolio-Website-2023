@@ -1,0 +1,24 @@
+/* Apply Libre Franklin font to the navbar */
+.navbar-brand, .nav-link {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 23px; /* Size for "Max Lichter" */
+    font-weight: 300;
+}
+
+.nav-link {
+    font-size: 13px; /* Size for navigation links */
+    font-weight: 100;
+    color: black !important; /* Make navigation links black */
+}
+
+/* Optional: Change the color on hover */
+.nav-link:hover {
+    color: #505050 !important; /* Darker shade of gray for hover state */
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
