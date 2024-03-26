@@ -1,0 +1,20 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+footer .fab, footer .fas {
+    font-size: 24px; /* Adjust icon size */
+}
+.social-icon {
+    margin: 0 10px; /* Increase spacing around each icon */
+    color: black !important; /* Ensure icons are black */
+}
+
+/* If you want to specifically resize icons, adjust the font-size on the social-icons container */
+.social-icons {
+    font-size: 14px; /* Makes icons smaller */
+}
+
+.share-icons .btn {
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  

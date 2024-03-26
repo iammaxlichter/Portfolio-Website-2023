@@ -1,0 +1,86 @@
+
+
+<footer class="mt-5 bg-white text-black text-center" style="position: relative;">
+    <!-- Existing footer content -->
+    <div class="footer-container" style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#" class="text-black social-icon"><i style="font-size: 16px" class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-black social-icon"><i style="font-size: 16px" class="fab fa-instagram"></i></a>
+            <a href="#" class="text-black social-icon"><i style="font-size: 16px" class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-black social-icon"><i style="font-size: 16px" class="fab fa-twitter"></i></a>
+            <a href="#" onclick="openShareModal()" class="text-black social-icon"><i style="font-size: 16px" class="fas fa-share-alt"></i></a>
+        </div>
+        
+        <!-- Name -->
+        <div class="name" style="font-size: 15px; font-weight:200;  font-family: 'Libre Franklin', sans-serif; margin-top: 5px;">
+            Max Lichter
+        </div>
+        
+        <!-- Copyright -->
+        <div class="copyright" style="margin-top: 0px; font-size:12px;">
+            © 2024 Max Lichter. All rights reserved.
+        </div>
+    </div>
+   
+    <div style="position: absolute; right: 40px; height:30px; bottom: -30px;">
+        <a href="#" class="back-to-top" onclick="scrollToTop(); return false;" style="color: black; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 300; text-decoration: none;">
+            <i class="fas fa-arrow-up" style="font-size: 12px; margin-right: 5px;"></i>Back to top
+        </a>
+    </div>
+    
+    <!-- Backdrop for modal -->
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+  <div id="shareModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header text-center justify-content-center" style="border-bottom: none;">
+          <h4 class="modal-title" style= "font-size: 15px;">Share</h4>
+        </div>
+        <div class="sharethis-inline-share-buttons"></div>
+
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <div class="input-group">
+            <input id="shareLink" type="text" class="form-control bg-light" style="font-family: 'Libre Franklin', sans-serif;"
+              value="https://iammaxlichter.github.io" readonly>
+            <div class="input-group-append">
+              <button id="copyButton" class="btn btn-outline-secondary" type="button">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+          </div>
+          <div id="copySuccessMessage" class="text-success mt-2"
+            style="display: none; font-family: 'Libre Franklin', sans-serif; font-size: 13px;">Successfully copied to
+            clipboard!</div>
+
+        </div>
+
+        <div class="row mt-1 justify-content-center share-icons">
+          <div class="text-center">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fallyjudgephotography.com"
+              target="_blank" class="btn btn-outline-secondary"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fallyjudgephotography.com" target="_blank"
+              class="btn btn-outline-secondary"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="https://wa.me/?text=Check%20out%20this%20website:%20https%3A%2F%2Fallyjudgephotography.com"
+              target="_blank" class="btn btn-outline-secondary"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="mailto:?subject=Check%20out%20this%20website&body=Here's%20a%20link%20to%20a%20website%20I%20thought%20you%20might%20like:%20https%3A%2F%2Fallyjudgephotography.com"
+              class="btn btn-outline-secondary"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </div>
+    
+</footer>

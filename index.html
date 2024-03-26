@@ -11,10 +11,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="CSSComponents/footer.css">
     <link rel="stylesheet" href="CSSComponents/navbar.css">
     <link rel="stylesheet" href="CSSComponents/index.css">
+    <link rel="stylesheet" href="CSSComponents/shareModal.css">
 
     <link rel="icon" href="Pictures/logo.png" type="image/x-icon">
     <title>Max Lichter</title>
@@ -37,10 +39,15 @@
                 .then(response => response.text())
                 .then(html => {
                     document.getElementById(targetId).innerHTML = html;
-                handleNavbar();
+                    // If targetId is 'footer', add event listener for copy button click
+                    if (targetId === 'footer') {
+                        document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
+                    }
+
+                    handleNavbar();
                 });
 
-            
+
         }
 
         // Call fetchAndInsert functiWon for navbar, main content, and footer
@@ -62,6 +69,7 @@
 
 
     <script src="JSComponents/navbar.js"></script>
+    <script src="JSComponents/footer.js"></script>
 
 </body>
 
