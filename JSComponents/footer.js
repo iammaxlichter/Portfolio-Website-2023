@@ -1,7 +1,6 @@
 function scrollToTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 // Function to open share modal
 function openShareModal() {
     var modal = document.getElementById("shareModal");
@@ -67,3 +66,27 @@ function openShareModal() {
     }
   });
   
+  // This function adds the "Back to top" button dynamically to the footer
+  function addBackToTopButton() {
+    console.log("Adding Back to Top button");
+    const footer = document.querySelector('footer');
+    if (!footer) {
+        console.log("Footer not found");
+        return;
+    }
+    const backToTopHtml = `
+    <div style="position: fixed; right: 20px; bottom: 20px;">
+        <a href="#" class="back-to-top" onclick="scrollToTop(); return false;" style="color: black; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 300; text-decoration: none;">
+            <i class="fas fa-arrow-up" style="font-size: 12px; margin-right: 5px;"></i>Back to top
+        </a>
+    </div>
+`;
+    footer.insertAdjacentHTML('beforeend', backToTopHtml);
+}
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      if (!document.location.href.includes('contact.html')) {
+          addBackToTopButton();
+      }
+  }, 100); 
+});
