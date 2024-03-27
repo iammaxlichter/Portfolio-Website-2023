@@ -1,57 +1,39 @@
-/* Adjusting the column settings */
-.col-md-4 {
-    /* width: 33.33%; Bootstrap's .col-md-4 class already handles the width, so you might not need this line */
-    padding: 0 15px; /* Adjust the padding as needed */
-}
-
-.col-md-4 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensure the image fills the container but maintains aspect ratio */
-}
-
 .card {
-    height: 525px; /* Adjust this value to your desired fixed height */
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Libre Franklin', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow for depth */
+    border: 1px solid #e0e0e0; /* Adds a subtle border */
+    background-color: #fff; /* Ensures card background is white or choose a light color that fits your design */
+    border-radius: 10px; /* Keeps the rounded corners */
+    margin-bottom: 30px; /* Adjusts spacing between cards */
 }
 
-.container {
-    max-width: 1000px; /* Adjust based on your design preference */
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-/* Center text content inside the card */
-.card-body {
-    text-align: center;
-}
-.card-title{
-    font-size:20px;
-    font-weight:500
-}
-
-.card-text{
-    font-size:12px;
-    font-weight:300
-}
-
-/* Center the image inside the card */
 .card-img-top {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto; /* Adjust this as needed, e.g., 80% to make the image smaller */
-    max-width: 100%; /* Ensures the image is never larger than the card */
-    height: auto; /* Maintains aspect ratio */
+    border-top-left-radius: 10px; /* Matches the card's border radius */
+    border-top-right-radius: 10px;
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: contain; /* Adjusts how the image should be resized to fit its container */
+}
+
+.card-body {
+    padding: 15px; /* Reduces padding to manage white space */
+}
+
+.card-title, .card-text {
+    margin-bottom: 10px; /* Reduces margin to manage white space */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjusts title size for emphasis */
+    font-weight: bold; /* Makes title text bold */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Slightly reduces text size to fit content better */
+    color: #555; /* Adjusts text color for softer contrast */
+}
+
+.btn-outline-dark {
+    width: 100%; /* Makes button width consistent */
+    border-radius: 0 0 10px 10px; /* Optional: matches the card's bottom border radius */
 }
