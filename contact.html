@@ -40,7 +40,7 @@
                 .then(html => {
                     document.getElementById(targetId).innerHTML = html;
                     // If targetId is 'footer', add event listener for copy button click
-                    if (targetId === 'footer') {
+                    if (targetId === 'footerCurrent') {
                         document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
                     }
 
@@ -70,6 +70,7 @@
 
     <script src="JSComponents/navbar.js"></script>
     <script src="JSComponents/footer.js"></script>
+    <script src="JSComponents/formValidation.js"></script>
 
 </body>
 

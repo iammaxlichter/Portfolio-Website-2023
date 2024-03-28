@@ -2,9 +2,17 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-
 .card:hover {
     transform: scale(1.05); /* Scales up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
+    cursor:pointer;
+}
+
+.resumeImage {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+.resumeImage:hover {
+    transform: scale(1.02); /* Scales up the card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
     cursor:pointer;
 }

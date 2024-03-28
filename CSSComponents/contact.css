@@ -1,29 +1,24 @@
-/* Additional CSS for contact form page */
-
-/* Increase font size and line height for better readability */
-.form-control {
-    font-size: 16px;
-    line-height: 1.6;
+body{  
+    font-family: 'Libre Franklin', sans-serif;
 }
 
-/* Style submit button */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+.container{
+    padding-top:80px;
+    padding-bottom:130px;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+/* Custom CSS for taller input boxes */
+.tall-input {
+    height: 50px; /* Adjust the height as needed */
 }
 
-/* Add padding to the form and adjust spacing */
-.container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.line-below {
+    border-bottom: 1px solid #dee2e6; /* Adjust color and style as needed */
 }
 
-/* Add margin to the image */
-.img-fluid {
-    margin-bottom: 20px;
+.custom-box {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Adjust color to blend with line */
 }
