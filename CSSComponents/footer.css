@@ -1,20 +1,75 @@
-body{
-    font-family: 'Libre Franklin', sans-serif;
-}
-footer .fab, footer .fas {
-    font-size: 24px; /* Adjust icon size */
-}
-.social-icon {
-    margin: 0 10px; /* Increase spacing around each icon */
-    color: black !important; /* Ensure icons are black */
+footer {
+    background-color: #fff; /* Maintaining a light theme */
+    color: #333; /* Dark text for contrast */
+    padding: 40px 20px; /* Spacious padding for layout */
+    border-top: 1px solid #eaeaea; /* Subtle border for separation */
 }
 
-/* If you want to specifically resize icons, adjust the font-size on the social-icons container */
-.social-icons {
-    font-size: 14px; /* Makes icons smaller */
+/* Social Icons Styling */
+.footer-container .social-icons a {
+    margin: 0 15px; /* Space out icons */
+    color: #333; /* Icon color */
+    font-size: 20px; /* Size of icons */
+    transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover */
 }
 
+.footer-container .social-icons a:hover {
+    color: #bdbdbd; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Text Styling */
+.footer-container .name, .footer-container .copyright {
+    font-size: 16px; /* Clear font size */
+    margin-top: 15px; /* Proper spacing */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+.footer-container .name:hover {
+    color: #3a3a3a; /* Matching highlight color */
+}
+
+/* Enhanced Share Buttons */
 .share-icons .btn {
-    margin: 0 10px; /* Adjust the margin as needed */
-  }
-  
+    background-color: #f8f9fa; /* Light background for buttons */
+    color: #333; /* Color matching the text */
+    border-color: #ddd; /* Soft border color */
+    margin: 5px; /* Margin around buttons */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition */
+}
+
+.share-icons .btn:hover {
+    background-color: #8f8f8f; /* Highlight background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Modal Customization */
+#shareModal .modal-content {
+    background-color: #fff; /* Keeping the modal light */
+    color: #333; /* Ensuring text is readable */
+    border-radius: 5px; /* Rounded corners for modern look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+#modalBackdrop {
+    background-color: rgba(12, 12, 12, 0.4); /* Semi-transparent backdrop */
+    display: none; /* Initially hidden */
+    position: fixed; /* Full screen */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1040;
+}
+
+/* Applying transitions for smooth appearance */
+#shareModal, #modalBackdrop {
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+#shareModal .modal-dialog {
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-dialog-centered {
+    opacity: 1;
+    transform: scale(1);
+}

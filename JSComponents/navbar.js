@@ -7,7 +7,7 @@ function handleNavbar() {
 
     // Get all navbar links
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-console.log("hi")
+
     // Loop through each navbar link
     navLinks.forEach(function(link) {
         

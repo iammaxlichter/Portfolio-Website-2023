@@ -1,23 +1,55 @@
-/* Apply Libre Franklin font to the navbar */
-.navbar-brand, .nav-link {
-    font-family: 'Libre Franklin', sans-serif;
+/* Base styles */
+.navbar {
+    background-color: #ffffff; /* Light background, consider using a gradient or a subtle pattern for more flair */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 1rem 2rem; /* Adjust padding for better spacing */
 }
 
 .navbar-brand {
-    font-size: 26px; /* Size for "Max Lichter" */
-    font-weight: 500;
-    font-family: 'Libre Franklin', sans-serif;
+    font-size: 28px; /* Slightly larger for prominence */
+    font-weight: 600; /* Bold for impact */
+    color: #000; /* Consider a unique color or gradient text */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #007bff; /* Highlight color on hover/focus */
 }
 
 .nav-link {
-    font-size: 13px; /* Size for navigation links */
-    font-weight: 100;
-    color: black !important; /* Make navigation links black */
+    font-size: 15px; /* Larger for readability */
+    font-weight: 400; /* Medium weight for better visibility */
+    color: #5a5a5a; /* Soft black for text */
+    margin-right: 25px; /* Increase spacing between links */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
 }
 
-/* Optional: Change the color on hover */
-.nav-link:hover {
-    color: #505050 !important; /* Darker shade of gray for hover state */
+.nav-link:hover, .nav-link:focus {
+    color: #007bff; /* Highlight color on hover/focus */
+    text-decoration: none; /* No underline on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,0.1); /* Lighter border color */
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: #007bff; /* Active link color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        padding: 0.5rem .1rem; /* Adjust padding for vertical nav on mobile */
+    }
+}
+
+/* Optional: Highlight the current page link */
+.nav-item.active .nav-link {
+    color: #007bff; /* Highlight color */
+    background-color: rgba(0,123,255,0.1); /* Subtle background highlight */
+    border-radius: 5px; /* Rounded corners for the active link */
 }
 
 .navbar-nav .nav-link.active {
