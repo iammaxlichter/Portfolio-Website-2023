@@ -1,3 +1,7 @@
+body{  
+    font-family: 'Libre Franklin', sans-serif;
+}
+
 footer {
     background-color: #fff; /* Maintaining a light theme */
     color: #333; /* Dark text for contrast */
@@ -6,26 +10,26 @@ footer {
 }
 
 /* Social Icons Styling */
-.footer-container .social-icons a {
+.footerCurrent .social-icons a {
     margin: 0 15px; /* Space out icons */
     color: #333; /* Icon color */
     font-size: 20px; /* Size of icons */
     transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover */
 }
 
-.footer-container .social-icons a:hover {
+.footerCurrent .social-icons a:hover {
     color: #bdbdbd; /* Highlight color on hover */
     transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 /* Text Styling */
-.footer-container .name, .footer-container .copyright {
+.footerCurrent .name, .footer-container .copyright {
     font-size: 16px; /* Clear font size */
     margin-top: 15px; /* Proper spacing */
     transition: color 0.2s ease; /* Smooth color transition */
 }
 
-.footer-container .name:hover {
+.footerCurrent .name:hover {
     color: #3a3a3a; /* Matching highlight color */
 }
 

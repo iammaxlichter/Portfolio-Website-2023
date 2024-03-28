@@ -1,0 +1,29 @@
+/* Additional CSS for contact form page */
+
+/* Increase font size and line height for better readability */
+.form-control {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Style submit button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Add padding to the form and adjust spacing */
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Add margin to the image */
+.img-fluid {
+    margin-bottom: 20px;
+}
