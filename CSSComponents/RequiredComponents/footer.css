@@ -3,22 +3,22 @@ body{
 }
 
 footer {
-    background-color: #fff; /* Maintaining a light theme */
-    color: #333; /* Dark text for contrast */
+    background-color: #8DB580; /* Maintaining a light theme */
+    color: #343330; /* Dark text for contrast */
     padding: 40px 20px; /* Spacious padding for layout */
-    border-top: 1px solid #eaeaea; /* Subtle border for separation */
+    border-top: 1px solid #343330; /* Subtle border for separation */
 }
 
 /* Social Icons Styling */
 .footerCurrent .social-icons a {
     margin: 0 15px; /* Space out icons */
-    color: #333; /* Icon color */
+    color: #343330; /* Icon color */
     font-size: 20px; /* Size of icons */
     transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover */
 }
 
 .footerCurrent .social-icons a:hover {
-    color: #bdbdbd; /* Highlight color on hover */
+    color: #ffffff; /* Highlight color on hover */
     transform: scale(1.1); /* Slight enlargement on hover */
 }
 
@@ -27,10 +27,6 @@ footer {
     font-size: 16px; /* Clear font size */
     margin-top: 15px; /* Proper spacing */
     transition: color 0.2s ease; /* Smooth color transition */
-}
-
-.footerCurrent .name:hover {
-    color: #3a3a3a; /* Matching highlight color */
 }
 
 /* Enhanced Share Buttons */
@@ -43,13 +39,16 @@ footer {
 }
 
 .share-icons .btn:hover {
-    background-color: #cbcbcb; /* Highlight background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #C2CFB2; /* Highlight background on hover */
+    color: #343330; /* White text on hover */
+    border: 1px solid  #343330
 }
-
+.copyButton:hover{
+    background-color: #C2CFB2;
+}
 /* Modal Customization */
 #shareModal .modal-content {
-    background-color: #fff; /* Keeping the modal light */
+    background-color: #8DB580; /* Keeping the modal light */
     color: #333; /* Ensuring text is readable */
     border-radius: 5px; /* Rounded corners for modern look */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */

@@ -13,12 +13,16 @@ body{
 }
 
 .line-below {
-    border-bottom: 1px solid #dee2e6; /* Adjust color and style as needed */
+    border-bottom: 1px solid #DDD1C7; /* Adjust color and style as needed */
 }
 
 .custom-box {
     background-color: #f8f9fa;
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #dee2e6; /* Adjust color to blend with line */
+    border: 1px solid #DDD1C7; /* Adjust color to blend with line */
+}
+
+.form-control.tall-input {
+    border-color: #DDD1C7; /* Desired border color */
 }
