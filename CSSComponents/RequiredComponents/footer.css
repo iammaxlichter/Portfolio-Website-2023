@@ -3,23 +3,23 @@ body{
 }
 
 footer {
-    background-color: #8DB580; /* Maintaining a light theme */
-    color: #343330; /* Dark text for contrast */
+    background-color: #343330; /* Maintaining a light theme */
+    color: #fff; /* Dark text for contrast */
     padding: 40px 20px; /* Spacious padding for layout */
-    border-top: 1px solid #343330; /* Subtle border for separation */
+    border-top: 1px solid #fff; /* Subtle border for separation */
 }
 
 /* Social Icons Styling */
 .footerCurrent .social-icons a {
     margin: 0 15px; /* Space out icons */
-    color: #343330; /* Icon color */
+    color: #fff; /* Icon color */
     font-size: 20px; /* Size of icons */
     transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover */
 }
 
 .footerCurrent .social-icons a:hover {
-    color: #ffffff; /* Highlight color on hover */
-    transform: scale(1.1); /* Slight enlargement on hover */
+    color: #C2CFB2; /* Highlight color on hover */
+    transform: scale(2.1); /* Slight enlargement on hover */
 }
 
 /* Text Styling */
@@ -32,7 +32,7 @@ footer {
 /* Enhanced Share Buttons */
 .share-icons .btn {
     background-color: #f8f9fa; /* Light background for buttons */
-    color: #333; /* Color matching the text */
+    color: black; /* Color matching the text */
     border-color: #ddd; /* Soft border color */
     margin: 5px; /* Margin around buttons */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition */
@@ -40,15 +40,15 @@ footer {
 
 .share-icons .btn:hover {
     background-color: #C2CFB2; /* Highlight background on hover */
-    color: #343330; /* White text on hover */
-    border: 1px solid  #343330
+    color: #fff; /* White text on hover */
+    border: 1px solid  #fff
 }
 .copyButton:hover{
     background-color: #C2CFB2;
 }
 /* Modal Customization */
 #shareModal .modal-content {
-    background-color: #8DB580; /* Keeping the modal light */
+    background-color: #343330; /* Keeping the modal light */
     color: #333; /* Ensuring text is readable */
     border-radius: 5px; /* Rounded corners for modern look */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */

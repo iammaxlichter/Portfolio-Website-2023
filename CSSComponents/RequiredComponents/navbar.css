@@ -1,38 +1,38 @@
 /* Base styles */
 .navbar {
-    background-color: #8DB580; /* Light background, consider using a gradient or a subtle pattern for more flair */
+    background-color: #343330; /* Light background, consider using a gradient or a subtle pattern for more flair */
     box-shadow: 0 3px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
     padding: 1rem 2rem; /* Adjust padding for better spacing */
-    border-bottom: 1px solid #343330;
+    border-bottom: 1px solid #8DB580;
 }
 
 .navbar-brand {
     font-size: 28px; /* Slightly larger for prominence */
     font-weight: 600; /* Bold for impact */
-    color: #343330; /* Consider a unique color or gradient text */
+    color: #fff; /* Consider a unique color or gradient text */
     transition: color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .nav-link {
     font-size: 15px; /* Larger for readability */
     font-weight: 400; /* Medium weight for better visibility */
-    color: #343330; /* Soft black for text */
+    color: #fff; /* Soft black for text */
     margin-right: 25px; /* Increase spacing between links */
     transition: color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #343330; /* Highlight color on hover/focus */
+    color: #fff; /* Highlight color on hover/focus */
     text-decoration: none; /* No underline on hover */
 }
 
 .navbar-toggler {
-    border-color: rgba(0,0,0,0.1); /* Lighter border color */
+    border-color: #fff; /* Lighter border color */
 }
 
 .nav-link.active {
     font-weight: 500;
-    color: #343330; /* Active link color */
+    color: #fff; /* Active link color */
     text-decoration: underline;
 }
 
@@ -45,8 +45,8 @@
 
 /* Optional: Highlight the current page link */
 .nav-item.active .nav-link {
-    color: #343330; /* Highlight color */
-    background-color: rgba(0,123,255,0.1); /* Subtle background highlight */
+    color: #fff; /* Highlight color */
+    background-color: #fff; /* Subtle background highlight */
     border-radius: 5px; /* Rounded corners for the active link */
 }
 

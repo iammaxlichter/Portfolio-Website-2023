@@ -30,11 +30,12 @@ body{
 .card-title {
     font-size: 1.25rem; /* Adjusts title size for emphasis */
     font-weight: bold; /* Makes title text bold */
+    color: #343330;
 }
 
 .card-text {
     font-size: 0.9rem; /* Slightly reduces text size to fit content better */
-    color: #555; /* Adjusts text color for softer contrast */
+    color: #7E8987/* Adjusts text color for softer contrast */
 }
 
 .btn-outline-dark {
