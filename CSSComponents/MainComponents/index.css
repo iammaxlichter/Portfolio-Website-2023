@@ -4,9 +4,11 @@ body{
 
 .card {
     background-image: none;
-    background-color: transparent; /* Add this line to make the background transparent */
+    background-color: white; /* Add this line to make the background transparent */
 }
-
+.test{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
+}
 
 .text-black {
     color: black;
@@ -17,13 +19,49 @@ body{
     border-radius: 0 0 10px 10px; /* Optional: matches the card's bottom border radius */
 }
 
+.custom-button2{
+    border-color: #343330; 
+    background-color:transparent; 
+    color: #343330;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border: 1px solid #343330"
+}
+
+.custom-button2:hover{
+    background-color: #C2CFB2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); border: 1px solid #343330"
+}
+
 .custom-button {
+    color: white; /* Text color */
+    background-color: #8DB580; /* Background color */
+    border-color: #8DB580; /* Border color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border: 1px solid #343330"
+}
+
+.custom-button:hover {
+    background-color: #7c9d6e; /* Change background color on hover */
+    border-color: #7c9d6e; /* Change border color on hover */
+    color:white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); border: 1px solid #343330"
+}
+
+.custom-button3{
+    border-color: #343330; 
+    background-color:white; 
+    color: #343330;
+}
+
+.custom-button3:hover{
+    background-color: #C2CFB2;
+}
+
+.custom-button4 {
     color: white; /* Text color */
     background-color: #8DB580; /* Background color */
     border-color: #8DB580; /* Border color */
 }
 
-.custom-button:hover {
+.custom-button4:hover {
     background-color: #7c9d6e; /* Change background color on hover */
     border-color: #7c9d6e; /* Change border color on hover */
     color:white

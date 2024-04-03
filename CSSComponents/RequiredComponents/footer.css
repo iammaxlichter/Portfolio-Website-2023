@@ -64,9 +64,14 @@ footer {
     border: 1px solid #fff
 }
 
+.copyButton{
+    color:black;
+    background-color: white;
+}
+
 .copyButton:hover {
     background-color: #C2CFB2;
-    color: #C2CFB2;
+    color: white;
 }
 
 /* Modal Customization */
