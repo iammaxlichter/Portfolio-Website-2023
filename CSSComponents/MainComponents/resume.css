@@ -14,12 +14,13 @@ body {
 }
 
 .btn {
-    border-color: #616161;
+    background-color: white;
 }
 
 .btn:hover {
-    background-color: #cbcbcb;
-    border-color: #cbcbcb;
+    background-color: #C2CFB2; /* Highlight background on hover */
+    color: #fff; /* White text on hover */
+    border: 1px solid  #fff
 }
 
 .resume-img {

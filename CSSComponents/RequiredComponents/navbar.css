@@ -3,7 +3,7 @@
     background-color: #343330; /* Light background, consider using a gradient or a subtle pattern for more flair */
     box-shadow: 0 3px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
     padding: 1rem 2rem; /* Adjust padding for better spacing */
-    border-bottom: 1px solid #8DB580;
+    border-bottom: 2px solid #8DB580;
 }
 
 .navbar-brand {
@@ -50,3 +50,18 @@
     border-radius: 5px; /* Rounded corners for the active link */
 }
 
+
+.custom-toggler {
+    border-color: #fff;
+    border:none;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    border:none;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }

@@ -3,42 +3,28 @@ body{
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow for depth */
-    border: 1px solid #e0e0e0; /* Adds a subtle border */
-    background-color: #fff; /* Ensures card background is white or choose a light color that fits your design */
-    border-radius: 10px; /* Keeps the rounded corners */
-    margin-bottom: 30px; /* Adjusts spacing between cards */
+    background-image: none;
+    background-color: transparent; /* Add this line to make the background transparent */
 }
 
 
-.card-img-top {
-    border-top-left-radius: 10px; /* Matches the card's border radius */
-    border-top-right-radius: 10px;
-    width: 100%; /* Ensure the image takes the full width of the card */
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
-    object-fit: contain; /* Adjusts how the image should be resized to fit its container */
-}
-
-.card-body {
-    padding: 15px; /* Reduces padding to manage white space */
-}
-
-.card-title, .card-text {
-    margin-bottom: 10px; /* Reduces margin to manage white space */
-}
-
-.card-title {
-    font-size: 1.25rem; /* Adjusts title size for emphasis */
-    font-weight: bold; /* Makes title text bold */
-    color: #343330;
-}
-
-.card-text {
-    font-size: 0.9rem; /* Slightly reduces text size to fit content better */
-    color: #7E8987/* Adjusts text color for softer contrast */
+.text-black {
+    color: black;
 }
 
 .btn-outline-dark {
     width: 100%; /* Makes button width consistent */
     border-radius: 0 0 10px 10px; /* Optional: matches the card's bottom border radius */
+}
+
+.custom-button {
+    color: white; /* Text color */
+    background-color: #8DB580; /* Background color */
+    border-color: #8DB580; /* Border color */
+}
+
+.custom-button:hover {
+    background-color: #7c9d6e; /* Change background color on hover */
+    border-color: #7c9d6e; /* Change border color on hover */
+    color:white
 }

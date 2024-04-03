@@ -26,3 +26,25 @@ body{
 .form-control.tall-input {
     border-color: #DDD1C7; /* Desired border color */
 }
+
+.custom-button {
+    width: 50%;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    background-color: #8DB580; /* Background color */
+    border-color: #8DB580; /* Border color */
+}
+
+.custom-button:hover {
+    background-color: #7c9d6e; /* Change background color on hover */
+    border-color: #7c9d6e; /* Change border color on hover */
+}
+
+.col-md-4 {
+    height: 100%; /* Ensure the column takes up the full height */
+}
+
+.col-md-4 img {
+    max-width: 100%; /* Ensure the image doesn't exceed the column width */
+}
