@@ -56,13 +56,14 @@ body{
 }
 
 .custom-button4 {
-    color: white; /* Text color */
-    background-color: #8DB580; /* Background color */
-    border-color: #8DB580; /* Border color */
+    border-color: #343330; 
+    background-color:transparent; 
+    color: #343330;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border: 1px solid #343330"
 }
 
 .custom-button4:hover {
     background-color: #7c9d6e; /* Change background color on hover */
-    border-color: #7c9d6e; /* Change border color on hover */
-    color:white
+    color:white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); border: 1px solid #343330"
 }
