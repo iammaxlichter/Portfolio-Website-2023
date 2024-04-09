@@ -3,7 +3,6 @@
     background-color: #343330; /* Light background, consider using a gradient or a subtle pattern for more flair */
     box-shadow: 0 3px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
     padding: 1rem 2rem; /* Adjust padding for better spacing */
-    border-bottom: 2px solid #8DB580;
 }
 
 .navbar-brand {
@@ -41,6 +40,10 @@
     .navbar-nav .nav-link {
         padding: 0.5rem .1rem; /* Adjust padding for vertical nav on mobile */
     }
+}
+
+.dropdown-item:hover {
+    background-color: #555; /* Change this to the desired hover color */
 }
 
 /* Optional: Highlight the current page link */
