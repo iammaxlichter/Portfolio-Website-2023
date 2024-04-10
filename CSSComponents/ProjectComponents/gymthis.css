@@ -1,3 +1,10 @@
+.img-fluid {
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity:1;
+}
 @media (max-width: 576px) { /* Small devices (576px and below) */
     .display-4 {
         font-size: 2rem; /* Adjust font size for small screens */
