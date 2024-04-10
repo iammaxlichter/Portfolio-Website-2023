@@ -35,6 +35,12 @@
     text-decoration: underline;
 }
 
+.dropdown-item.active {
+    color: #fff; /* Active link color */
+    text-decoration: underline;
+    background-color: #343330;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .navbar-nav .nav-link {

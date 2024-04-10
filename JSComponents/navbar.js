@@ -7,13 +7,24 @@ function handleNavbar() {
 
     // Get all navbar links
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    var dropdownLink = document.querySelectorAll('.dropdown-menu .dropdown-item');
 
     // Loop through each navbar link
-    navLinks.forEach(function(link) {
-        
+    navLinks.forEach(function (link) {
+
         // Check if the link's data-page matches the current page URL parameter
         if (link.dataset.page === currentPage) {
-            
+
+            // Add a class to underline the active link
+            link.classList.add('active');
+        }
+    });
+    // Loop through each navbar link
+    dropdownLink.forEach(function (link) {
+
+        // Check if the link's data-page matches the current page URL parameter
+        if (link.dataset.page === currentPage) {
+
             // Add a class to underline the active link
             link.classList.add('active');
         }
