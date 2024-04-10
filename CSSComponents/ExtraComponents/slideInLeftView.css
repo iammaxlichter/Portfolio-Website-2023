@@ -1,0 +1,22 @@
+
+.slide-in-left{
+    opacity:0;
+}
+.slide-in-left-active {
+    animation: slideInFromLeft 2s ease forwards;
+}
+.slide-in-left-active{
+    animation-delay:1s;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity:0;
+        transform: translateX(200%);
+    }
+
+    to {
+        opacity:1;
+        transform: translateX(0);
+    }
+}

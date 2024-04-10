@@ -7,6 +7,8 @@
     opacity: 1;
   }
 
+
+
   @media (max-width: 576px) { /* Small devices (576px and below) */
     .display-4 {
         font-size: 2rem; /* Adjust font size for small screens */

@@ -1,0 +1,23 @@
+
+.slide-in-right{
+    opacity:0;
+}
+.slide-in-right-active {
+
+    animation: slideInFromRight 2s ease forwards;
+}
+.slide-in-right-active{
+    animation-delay:.5s;
+}
+
+@keyframes slideInFromRight{
+    from {
+        opacity:0;
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity:1;
+    }
+}

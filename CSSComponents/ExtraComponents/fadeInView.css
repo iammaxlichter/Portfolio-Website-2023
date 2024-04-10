@@ -1,0 +1,17 @@
+/* Animation for the fade in code */ 
+.fade-in-view {
+    opacity:0;
+}
+
+.fade-in-view-active {
+    animation: fadeInAnimation ease 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
