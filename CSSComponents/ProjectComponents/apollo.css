@@ -15,7 +15,13 @@
         font-size: 2rem; /* Adjust font size for small screens */
     }
     .underText{
-        font-size: 1rem
+        font-size: .8rem
+    }
+    .date{
+        padding-top:20px;
+    }
+    .titleSection{
+        margin-top:-50px;
     }
 }
 

@@ -6,3 +6,18 @@
   .carousel-fade .carousel-item.active {
     opacity: 1;
   }
+
+  @media (max-width: 576px) { /* Small devices (576px and below) */
+    .display-4 {
+        font-size: 2rem; /* Adjust font size for small screens */
+    }
+    .underText{
+        font-size: .8rem
+    }
+    .date{
+        padding-top:20px;
+    }
+    .titleSection{
+      margin-top:-50px;
+  }
+}
