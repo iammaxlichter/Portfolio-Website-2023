@@ -6,9 +6,6 @@
 
     animation: slideInFromRight 2s ease forwards;
 }
-.slide-in-right-active{
-    animation-delay:.5s;
-}
 
 @keyframes slideInFromRight{
     from {

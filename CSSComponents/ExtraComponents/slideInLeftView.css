@@ -5,9 +5,6 @@
 .slide-in-left-active {
     animation: slideInFromLeft 2s ease forwards;
 }
-.slide-in-left-active{
-    animation-delay:1s;
-}
 
 @keyframes slideInFromLeft {
     from {

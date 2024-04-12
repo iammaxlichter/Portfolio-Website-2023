@@ -1,0 +1,19 @@
+
+.slide-in-bottom{
+    opacity:0;
+}
+.slide-in-bottom-active {
+    animation: slideInFromBottom 2s ease forwards;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity:0;
+        transform: translateY(200%);
+    }
+
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
