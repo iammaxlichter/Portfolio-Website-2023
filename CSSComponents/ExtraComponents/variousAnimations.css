@@ -19,20 +19,79 @@
 }
 
 /* Animation for paragraph sliding from right to left */
+.slideInRight {
+    animation: slideInRight 2s ease forwards;
+}
+
+
+/* Animation for paragraph sliding from right to left */
 .fadeIn {
     animation: fadeIn 3s ease forwards;
 }
+
 /* Animation for paragraph sliding from right to left */
-.fadeIn {
-    animation-delay: 2s;
+.fadeInGymThis {
+    opacity:0;
+    animation: fadeInGymThis 3s ease forwards;
 }
 
+/* Animation for paragraph sliding from right to left */
+.fadeInGymThis {
+    animation-delay:2s
+}
+
+
+.slideFromBottom {
+    animation: slideFromBottom 3s ease forwards;
+}
+
+.slideFromTop {
+    animation: slideFromTop 3s ease forwards;
+}
+
+
+@keyframes slideFromBottom{
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 
 /* Keyframes for sliding animation */
 @keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
     }
 
     to {
@@ -54,6 +113,16 @@
 }
 
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInGymThis{
     from {
         opacity: 0;
     }

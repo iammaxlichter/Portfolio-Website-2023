@@ -3,10 +3,10 @@
 }
 
 .custom-box {
-    background-color: #fff;
+    background-color: #fbfbfb;
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #DDD1C7; /* Adjust color to blend with line */
+    border: 1px solid #9D231B; /* Adjust color to blend with line */
 }
 
 
@@ -22,7 +22,7 @@
     width: 30%;
     height: 50px;
     font-weight: 400;
-    color: white;
+    color: #fbfbfb;
     background-color: #9D231B; /* Background color */
     border-color: #9D231B; /* Border color */
 }
@@ -30,7 +30,7 @@
 .custom-button:hover {
     background-color: #8D201B; /* Change background color on hover */
     border-color: #8D201B; /* Change border color on hover */
-    color: white;
+    color: #fbfbfb;
 }
 
 @media (max-width: 576px) { /* Small devices (576px and below) */

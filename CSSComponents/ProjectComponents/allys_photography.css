@@ -12,6 +12,36 @@ body{
     opacity: 1;
 }
 
+.custom-button {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; /* Background color */
+    border-color: #9D231B; /* Border color */
+}
+
+.custom-button:hover {
+    background-color: #8D201B; /* Change background color on hover */
+    border-color: #8D201B; /* Change border color on hover */
+    color: #fbfbfb;
+}
+
+.custom-button2 {
+    width: 40%;
+    height: 50px;
+    font-weight: 400;
+    color: #343330;
+    background-color: #fbfbfb; /* Background color */
+    border-color: #9D231B; /* Border color */
+}
+
+.custom-button2:hover {
+    background-color: #8D201B; /* Change background color on hover */
+    border-color: #8D201B; /* Change border color on hover */
+    color: #fbfbfb;
+}
+
 
 @media (max-width: 576px) { /* Small devices (576px and below) */
 

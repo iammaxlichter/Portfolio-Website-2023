@@ -1,7 +1,6 @@
 /* resume.css */
 body {
     font-family: 'Libre Franklin', sans-serif;
-    color: #333;
 }
 
 .container {
@@ -14,12 +13,14 @@ body {
 }
 
 .btn {
-    background-color: white;
+    background-color: #fbfbfb;
+    color:#343330; 
+    border:1px solid #343330"
 }
 
 .btn:hover {
-    background-color: #C2CFB2; /* Highlight background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #343330;; /* Highlight background on hover */
+    color: #fbfbfb; /* White text on hover */
     border: 1px solid  #fff
 }
 

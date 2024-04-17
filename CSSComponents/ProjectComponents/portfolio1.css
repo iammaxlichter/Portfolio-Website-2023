@@ -5,6 +5,21 @@
     object-fit: cover;
 }
 
+.custom-button {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; /* Background color */
+    border-color: #9D231B; /* Border color */
+}
+
+.custom-button:hover {
+    background-color: #8D201B; /* Change background color on hover */
+    border-color: #8D201B; /* Change border color on hover */
+    color: #fbfbfb;
+}
+
 @media (max-width: 576px) { /* Small devices (576px and below) */
     .display-4 {
         font-size: 2rem; /* Adjust font size for small screens */

@@ -17,7 +17,7 @@ body{
 }
 
 .custom-box {
-    background-color: #f8f9fa;
+    background-color: #fbfbfb;
     border-radius: 4px;
     padding: 20px;
     border: 1px solid #9D231B; /* Adjust color to blend with line */
@@ -31,7 +31,7 @@ body{
     width: 50%;
     height: 50px;
     font-weight: 400;
-    color: white;
+    color: #fbfbfb;
     background-color: #9D231B; /* Background color */
     border-color: #9D231B; /* Border color */
 }
