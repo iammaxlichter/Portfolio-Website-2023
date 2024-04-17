@@ -13,18 +13,18 @@ body{
 }
 
 .line-below {
-    border-bottom: 1px solid #DDD1C7; /* Adjust color and style as needed */
+    border-bottom: 1px solid #9D231B; /* Adjust color and style as needed */
 }
 
 .custom-box {
     background-color: #f8f9fa;
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #DDD1C7; /* Adjust color to blend with line */
+    border: 1px solid #9D231B; /* Adjust color to blend with line */
 }
 
 .form-control.tall-input {
-    border-color: #DDD1C7; /* Desired border color */
+    border-color: #9D231B; /* Desired border color */
 }
 
 .custom-button {
@@ -32,13 +32,13 @@ body{
     height: 50px;
     font-weight: 400;
     color: white;
-    background-color: #8DB580; /* Background color */
-    border-color: #8DB580; /* Border color */
+    background-color: #9D231B; /* Background color */
+    border-color: #9D231B; /* Border color */
 }
 
 .custom-button:hover {
-    background-color: #7c9d6e; /* Change background color on hover */
-    border-color: #7c9d6e; /* Change border color on hover */
+    background-color: #8D201B; /* Change background color on hover */
+    border-color: #8D201B; /* Change border color on hover */
 }
 
 .col-md-4 {

@@ -5,18 +5,17 @@ body {
 footer {
     background-color: #343330;
     /* Maintaining a light theme */
-    color: #fff;
+    color: #fbfbfb;
     /* Dark text for contrast */
     padding: 40px 20px;
     /* Spacious padding for layout */
-    border-top: 2px solid #8DB580;
 }
 
 /* Social Icons Styling */
 .footerCurrent .social-icons a {
     margin: 0 15px;
     /* Space out icons */
-    color: #fff;
+    color: #fbfbfb;
     /* Icon color */
     font-size: 20px;
     /* Size of icons */
@@ -25,9 +24,9 @@ footer {
 }
 
 .footerCurrent .social-icons a:hover {
-    color: #C2CFB2;
+    color: #dbdbdb;
     /* Highlight color on hover */
-    transform: scale(2.1);
+    transform: scale(5.1);
     /* Slight enlargement on hover */
 }
 
@@ -44,12 +43,9 @@ footer {
 
 /* Enhanced Share Buttons */
 .share-icons .btn {
-    background-color: #f8f9fa;
+    background-color: #fbfbfb;
     /* Light background for buttons */
-    color: black;
-    /* Color matching the text */
-    border-color: #ddd;
-    /* Soft border color */
+    color: #343330;
     margin: 5px;
     /* Margin around buttons */
     transition: background-color 0.2s, color 0.2s;
@@ -57,21 +53,20 @@ footer {
 }
 
 .share-icons .btn:hover {
-    background-color: #C2CFB2;
+    background-color: #343330;
     /* Highlight background on hover */
-    color: #fff;
+    color: #fbfbfb;
     /* White text on hover */
-    border: 1px solid #fff
 }
 
 .copyButton{
-    color:black;
-    background-color: white;
+    color:#343330;
+    background-color: #fbfbfb;
 }
 
 .copyButton:hover {
-    background-color: #C2CFB2;
-    color: white;
+    background-color: #343330;
+    border: 1px solid #fbfbfb;
 }
 
 /* Modal Customization */

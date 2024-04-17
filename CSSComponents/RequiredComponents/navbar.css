@@ -30,14 +30,13 @@
 }
 
 .nav-link.active {
-    font-weight: 500;
+    font-weight: bold;
     color: #fff; /* Active link color */
-    text-decoration: underline;
 }
 
 .dropdown-item.active {
     color: #fff; /* Active link color */
-    text-decoration: underline;
+    font-weight: bold;
     background-color: #343330;
 }
 
