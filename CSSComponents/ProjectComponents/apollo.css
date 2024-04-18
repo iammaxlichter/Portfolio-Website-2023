@@ -1,15 +1,35 @@
-.line-below {
-    border-bottom: 1px solid #9D231B; /* Adjust color and style as needed */
+/*The whole page has the characteristics below*/
+body{
+    font-family: 'Libre Franklin', sans-serif;
 }
 
+
+/*Box CSS*/ 
 .custom-box {
     background-color: #fbfbfb;
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #9D231B; /* Adjust color to blend with line */
+    border: 1px solid #9D231B; 
+}
+
+.line-below {
+    border-bottom: 1px solid #9D231B; 
 }
 
 
+/*Class for font size 15*/
+.fs-15{
+    font-size:15px;
+}
+
+
+/*Class for custom border radius*/
+.custom-border-radius {
+    border-radius: 5px;
+  }
+
+
+/*Hyperlink color and hover*/
 .link {
     color:#9D231B;
 }
@@ -18,24 +38,26 @@
     color: #8D201B;
 }
 
+
+/*GitHub button*/
 .custom-button {
     width: 30%;
     height: 50px;
     font-weight: 400;
     color: #fbfbfb;
-    background-color: #9D231B; /* Background color */
-    border-color: #9D231B; /* Border color */
+    background-color: #9D231B; 
 }
 
 .custom-button:hover {
-    background-color: #8D201B; /* Change background color on hover */
-    border-color: #8D201B; /* Change border color on hover */
-    color: #fbfbfb;
+    background-color: #8D201B; 
+    color:#fbfbfb; 
 }
 
-@media (max-width: 576px) { /* Small devices (576px and below) */
+
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) { 
     .display-4 {
-        font-size: 2rem; /* Adjust font size for small screens */
+        font-size: 2rem;
     }
     .underText{
         font-size: .8rem

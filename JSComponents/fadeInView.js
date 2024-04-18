@@ -33,5 +33,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the function immediately
     fadeInView();
     // Call the function again after a short delay (e.g., 500ms) to ensure images outside the initial viewport also have a chance to fade in
-    setTimeout(fadeInImages, 200);
+    setTimeout(fadeInView, 200);
 });
