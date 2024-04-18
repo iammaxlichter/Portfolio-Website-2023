@@ -1,31 +1,23 @@
-/* resume.css */
+/* Styles for resume */
 body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top:30px;
-    padding-bottom:30px
+/* Font size 24px */
+.fs-24 {
+    font-size: 24px;
 }
 
+/* Button styles */
 .btn {
     background-color: #fbfbfb;
-    color:#343330; 
-    border:1px solid #343330"
+    color: #343330;
+    border: 1px solid #343330;
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-    background-color: #343330;; /* Highlight background on hover */
-    color: #fbfbfb; /* White text on hover */
-    border: 1px solid  #fff
-}
-
-.resume-img {
-    max-width: 100%;
-    border: 2px solid #000;
-    border-radius: 10px;
+    background-color: #343330;
+    color: #fbfbfb;
+    border: 1px solid #fbfbfb;
 }

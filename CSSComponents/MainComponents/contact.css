@@ -1,50 +1,77 @@
-body{  
+/* Styles for resume */
+body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.container{
-    padding-top:80px;
-    padding-bottom:130px;
+/* Font size 67px */
+.fs-67 {
+    font-size: 67px;
+}
+
+/* Font size 20px */
+.fs-20 {
+    font-size: 20px;
+}
+
+/* Line height 1.1 */
+.lh-110 {
+    line-height: 1.1;
 }
 
 /* Custom CSS for taller input boxes */
 .tall-input {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px;
 }
 
+/* Line below style */
 .line-below {
-    border-bottom: 1px solid #9D231B; /* Adjust color and style as needed */
+    border-bottom: 1px solid #9D231B;
 }
 
+/* Custom box style */
 .custom-box {
     background-color: #fbfbfb;
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #9D231B; /* Adjust color to blend with line */
+    border: 1px solid #9D231B;
 }
 
+/* Form control for tall input */
 .form-control.tall-input {
-    border-color: #9D231B; /* Desired border color */
+    border-color: #9D231B;
 }
 
+/* Submit button style */
 .custom-button {
-    width: 50%;
+    width: 30%;
     height: 50px;
     font-weight: 400;
     color: #fbfbfb;
-    background-color: #9D231B; /* Background color */
-    border-color: #9D231B; /* Border color */
+    background-color: #9D231B;
 }
 
+/* Hover effect for submit button */
 .custom-button:hover {
-    background-color: #8D201B; /* Change background color on hover */
-    border-color: #8D201B; /* Change border color on hover */
+    background-color: #8D201B;
+    color: #fbfbfb;
 }
 
-.col-md-4 {
-    height: 100%; /* Ensure the column takes up the full height */
+/* Hover effect for submit button border */
+.custom-button:hover {
+    background-color: #8D201B;
+    border-color: #8D201B;
 }
 
-.col-md-4 img {
-    max-width: 100%; /* Ensure the image doesn't exceed the column width */
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) { 
+    .topText {
+        font-size: 3rem;
+    }
+    .underText{
+        font-size: 1.2rem
+    }
+    .custom-box{
+        margin-bottom:40px;
+    }
 }
+

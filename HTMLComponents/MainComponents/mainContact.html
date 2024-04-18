@@ -1,18 +1,25 @@
-<div class="container-fluid p-0" style="background-color: #fbfbfb;">
-<div class="container " id="mainContent" style="background-color: #fbfbfb;">
+<div class="container-fluid" style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px;">
+<div class="container">
     <div class="row">
 
         <!-- Left Column -->
-        <div class="col-md-6 pr-lg-5 d-flex flex-column align-items-left slideInRight">
-            <p class="text-left mt-0"
-                style="font-family: 'Libre Franklin', sans-serif; color:#343330; font-size: 67px; font-weight: bold; line-height: 1.1;">
+        <div class="col-md-6 slideInRight d-flex flex-column align-items-left pr-lg-5">
+            
+            <!-- discover more about me text -->
+            <p class="text-left topText font-weight-bold lh-110 fs-67 mt-0" style="color:#343330;">
                 Discover more about me
             </p>
-            <p class="text-left mb-4" style="color: #9D231B; font-weight: 400; font-size: 20px; margin-bottom: 20px;">
+
+            <!-- "let explore.... " text -->
+            <p class="text-left underText font-weight-normal fs-20 mb-4" style="color: #9D231B">
                 Let's explore more about who I am as a person.
             </p>
+
+            <!-- giant box on the left column -->
             <div class="custom-box">
-                <div class="row mb-3 line-below">
+
+                <!-- First section of the box -->
+                <div class="row line-below mb-3">
                     <div class="col d-flex align-items-start mt-3 mb-4">
                         <i class="fas fa-check mt-1 mr-2" style="color: #9D231B"></i>
                         <span style="color:#343330">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
@@ -20,13 +27,17 @@
                             aliquet at nec ex.</span>
                     </div>
                 </div>
-                <div class="row mb-3 line-below">
+
+                <!-- Second section of the box -->
+                <div class="row line-below mb-3">
                     <div class="col d-flex align-items-start mt-3 mb-4">
                         <i class="fas fa-check mt-1 mr-2" style="color: #9D231B"></i>
                         <span style="color: #343330">Integer nec odio. Praesent libero. Sed ante dapibus diam.</span>
                     </div>
                 </div>
-                <div class="row mb-3 line-below">
+
+                <!-- Third section of the box -->
+                <div class="row line-below mb-3">
                     <div class="col d-flex align-items-start mt-3 mb-4">
                         <i class="fas fa-check mt-1 mr-2" style="color: #9D231B"></i>
                         <span style="color: #343330">Duis sagittis ipsum. Praesent mauris. Fusce
@@ -34,6 +45,8 @@
                             tellus sed augue semper porta.</span>
                     </div>
                 </div>
+
+                <!-- Fourth section of the box -->
                 <div class="row">
                     <div class="col d-flex align-items-start mt-3 mb-4">
                         <i class="fas fa-check mt-1 mr-2" style="color: #9D231B"></i>
@@ -46,17 +59,19 @@
         </div>
 
         <!-- Right Column for the Form -->
-        <div class="col-md-6 pl-lg-5 slideInLeft " style="margin-top:10px;">
+        <div class="col-md-6 slideInLeft pl-lg-5 mt-2">
             <form action="https://formspree.io/f/xyyrnjgg" method="POST" onsubmit="return validateForm()">
-                <!-- Form fields -->
-                <!-- First Name -->
+               
                 <div class="row">
+
+                     <!-- First Name -->
                     <div class="col-6 form-group">
                         <label for="firstName" class="upperText" style="color: #343330"><strong>First Name</strong><span
-                                class="font-weight-bold" style="color:#7E8987">*</span></label>
+                                class="font-weight-bold" style="color:#9D231B">*</span></label>
                         <input type="text" class="form-control tall-input" name="First Name" id="firstName"
                             placeholder="Enter your first name" style="color:#9D231B" required>
                     </div>
+
                     <!-- Last Name -->
                     <div class="col-6 form-group">
                         <label for="lastName" class="upperText" style="color: #343330"><strong>Last Name</strong><span
@@ -64,6 +79,7 @@
                         <input type="text" class="form-control tall-input" name="Last Name" id="lastName"
                             placeholder="Enter your last name" required>
                     </div>
+
                 </div>
                 
 
@@ -74,12 +90,14 @@
                     <input type="email" class="form-control tall-input" id="email" name="Email"
                         placeholder="Enter your email" required>
                 </div>
+
                 <!-- Subject -->
                 <div class="form-group mt-4">
                     <label for="subject" class="upperText" style="color: #343330"><strong>Subject</strong></label>
                     <input type="text" class="form-control tall-input" id="subject" name="Subject"
                         placeholder="Enter the subject">
                 </div>
+
                 <!-- Message -->
                 <div class="form-group mt-4">
                     <label for="message" class="upperText" style="color: #343330"><strong>Message</strong><span
@@ -87,9 +105,11 @@
                     <textarea class="form-control" style="border:1px solid #9D231B" id="message" rows="8" name="Message" placeholder="Enter your message"
                         required></textarea>
                 </div>
+
                 <!-- Additional Text -->
                 <p class="mt-0 mb-0" style="font-size: 12px; color: #9D231B; font-weight: bold;">Fields marked with an
                     asterisk (<span style="color:#9D231B">*</span>) are required.</p>
+
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-md btn-dark mt-4 custom-button">Submit</button>
 
