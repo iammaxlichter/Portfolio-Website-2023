@@ -1,14 +1,10 @@
-.img-fluid {
-    margin-bottom: 0px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/*The whole page has the characteristics below*/
+body{
+    font-family: 'Libre Franklin', sans-serif;
 }
 
-.fadeIn{
-    opacity:0;
-}
 
+/*Hyperlink color and hover*/
 .link {
     color:#9D231B;
 }
@@ -17,24 +13,25 @@
     color: #8D201B;
 }
 
+
+/*GitHub button*/
 .custom-button {
     width: 30%;
     height: 50px;
     font-weight: 400;
     color: #fbfbfb;
-    background-color: #9D231B; /* Background color */
-    border-color: #9D231B; /* Border color */
+    background-color: #9D231B; 
 }
 
 .custom-button:hover {
-    background-color: #8D201B; /* Change background color on hover */
-    border-color: #8D201B; /* Change border color on hover */
-    color: #fbfbfb;
+    background-color: #8D201B; 
 }
 
-@media (max-width: 576px) { /* Small devices (576px and below) */
+
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) {
     .display-4 {
-        font-size: 2rem; /* Adjust font size for small screens */
+        font-size: 2rem; 
     }
     .underText{
         font-size: .8rem
