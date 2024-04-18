@@ -1,103 +1,123 @@
-<div class="container-fluid"
-    style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px; position: relative;">
+<div class="container-fluid" style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px;">
     <div class="container">
+
+        <!-- Top section with the title, description, and date -->
         <div class="titleSection">
-            <h6 class="display-4 text-left font-weight-bold text-sm" style="margin-bottom: 0; color:#343330">Portfolio
-                Website (Ver. 2)</h6>
-            <h5 class="text-left underText mb-4 mt-2" style="color: #343330; font-weight: 400; margin-bottom: 20px;">An
+            <h6 class="display-4 text-left font-weight-bold text-sm" style="color:#343330">Portfolio
+                Website 2024</h6>
+            <h5 class="underText text-left font-weight-normal mb-4 mt-2" style="color: #343330;">An
                 enhanced, mobile-responsive, refreshing and refactored upgrade to the original.
-                <span class="date" style="color: #9D231B;float:right; font-style: italic;">Aug. 2023 - Dec. 2023</span>
+                <span class="date float-right font-italic" style="color: #9D231B;">Aug. 2023 - Dec. 2023</span>
             </h5>
 
         </div>
 
-       
         <div class="row">
-            <div class="col-md-10 col-12 mt-3 mx-auto ">
-                <p class="text-left pt-4 slide-in-bottom">
-                    I started this project in the Summer of 2022. I was at a standpoint at my love for Computer Science
-                    and school had just let out. With me being bored and interviewing for a Summer job in my hometown, I
-                    decided I need a website to keep track of all of my professional achievements / acolades and thus,
-                    this website was born.
-                    <br><br></p>
-                    <p class="text-left slide-in-bottom">
-                    By absolutely no means is this project nearly where I want to be in terms of development, but by
-                    creating this webpage, I dramatically increased my knowledge in HTML, CSS, and Javascript.
-                    Re-learning these languages I used 4+ years ago in highschool was incredibly fun. Even though this
-                    project is always a work in progress, I'm super happy with the outcome. I'll constantly be updating
-                    & changing things on this webpage, & on the left is pictures concerning the process of creating this
-                    project.
-                    <br><br>
 
-                    Below is a link to this projects GitHub repository aswell as images of the website itself.
+            <!-- the three paragraphs about the portfolio 2024 website -->
+            <div class="col-md-10 col-12 mx-auto mt-3">
+
+                <!-- First paragraph -->
+                <p class="slide-in-bottom text-left fs-15 pt-4">
+                    I started a quest in the summer of 2022 to use a personal website to highlight my accomplishments
+                    and honors in the workplace. I was itching for a creative outlet in the field of computer science as
+                    school was coming to a close and the possibility of summer employment loomed. <span class="font-weight-bold font-italic">My first website was
+                    therefore the result of both need and curiosity</span>.
+                    <br>
                 </p>
-                <div class="text-left pb-5 mt-3 slide-in-bottom">
-                    <a href="https://github.com/iammaxlichter/GymThis" target="_blank">
-                        <button class="btn btn-md custom-button" id="githubGymThisButton"
-                            style="border: 1px solid #9D231B; border-radius: 10px;">GitHub</button>
-                            
+
+                <!-- Second paragraph -->
+                <p class="slide-in-bottom text-left fs-15">
+                    Even though it worked, the first version was a basic showcase for my abilities, constructed using
+                    <span class="font-italic font-underline">HTML, CSS, and JavaScript</span>. It was functional, but it lacked the elegance and sophistication I was
+                    looking for. Now that some time has passed and my knowledge was grown, I am excited to share the
+                    development of my online
+                    persona. My updated portfolio website is evidence of my capacity to change and improve. Both the
+                    look and feel have changed dramatically with the addition of <span class="font-weight-bold">Bootstrap CSS</span> and careful attention to
+                    mobile responsiveness.
+                    <br>
+                </p>
+
+                <!-- Third paragraph -->
+                <p class="slide-in-bottom text-left fs-15">
+                    The days of limited interaction and unchanging layouts are long gone. With its elegant layout and
+                    simple navigation, the new website radiates sophistication. Every element, from dynamic content to
+                    smooth transitions, has been carefully designed to improve the user experience. The website smoothly
+                    adjusts to various screen sizes when viewed on a desktop computer or a smartphone, guaranteeing
+                    accessibility without sacrificing usability. This version is a big step forward for me as a web
+                    developer, with a <span class="font-weight-bold">more feature-rich feature set and a more polished look</span>. I'm eager to see where
+                    this digital voyage takes me as I iterate and improve further. Below, is a link to the websites
+                    GitHub repository.
+                </p>
+
+                <!-- Portfolio Website 2024 GitHub button -->
+                <div class="text-left slide-in-right mt-4 mb-4">
+                    <a href="https://github.com/iammaxlichter/iammaxlichter.github.io2" target="_blank">
+                        <button class="btn btn-md custom-button custom-border-radius">GitHub</button>
                     </a>
                 </div>
 
             </div>
         </div>
         <div class="row">
+
+            <!-- This is where the enlarged image and corresponding caption will be -->
             <div class="col-md-6 col-12 pr-lg-5 mt-5">
-                <!-- Placeholder for the enlarged image -->
-                
-                <img id="enlargedImg" src="" alt="Enlarged Image">
+                <img id="enlargedImg" class="growOnHover" src="">
                 <p id="caption"></p>
             </div>
-            <div class="col-md-6 col-12 pl-lg-5" style="margin-top:-5px;">
-                <p class="text-center fade-in-view" style="font-size:20px">Click the image to learn more.</p>
+
+            <div class="col-md-6 col-12 pl-lg-5">
+                <p class="fade-in-view text-center fs-20">Click the images to learn more.</p>
                 <div class="row">
-                    <!-- Sample image repeated in the layout -->
+
+                    <!-- First column of pictures -->
                     <div class="col-sm-4 col-4 pt-0 pb-1 pr-1 pl-1">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view"  style="cursor:pointer;" alt="Picture 1"
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1" alt=""
                             onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="cursor:pointer;" alt="Picture 1"
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1" alt=""
                             onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo3.png" class="img-fluid pb-1 fade-in-view" style="cursor:pointer;" alt="Picture 1"
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1" alt=""
                             onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo3.png" class="img-fluid pb-1 fade-in-view" style="cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
-                    </div>
-                    <div class="col-sm-4 col-4 pt-0 pb-1 pr-1 pl-1">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo3.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s;cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s;cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s;cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.2s;cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                    </div>
-                    <div class="col-sm-4 col-4 pt-0 pb-1 pr-1 pl-1">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo3.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
-                        <img src="/pictures/apollo1.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
-                        <img src="/pictures/apollo2.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
-                        <img src="/pictures/apollo3.png" class="img-fluid pb-1 fade-in-view" style="animation-delay:.4s; cursor:pointer;" alt="Picture 1"
-                            onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1" alt=""
+                            onclick="enlargeImage(this);" data-caption="Caption for Picture 4">
                     </div>
 
-                    <!-- Repeat or add more <div class="col-sm-3 p-1"> blocks with additional images if needed -->
+                    <!-- Second column of pictures -->
+                    <div class="col-sm-4 col-4 pt-0 pb-1 pr-1 pl-1">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.2s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.2s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.2s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 3">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.2s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 4">
+                    </div>
+
+                    <!-- Third column of pictures -->
+                    <div class="col-sm-4 col-4 pt-0 pb-1 pr-1 pl-1">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.4s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.4s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.4s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 3">
+                        <img src="/pictures/apollo1.png" class="img-fluid growOnHover fade-in-view pb-1"
+                            style="animation-delay:.4s" alt="" onclick="enlargeImage(this);"
+                            data-caption="Caption for Picture 4">
+                    </div>
+
                 </div>
             </div>
+
         </div>
 
 
