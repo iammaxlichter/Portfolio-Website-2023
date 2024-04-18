@@ -1,3 +1,4 @@
+// Validates the form fields to ensure all required fields are filled before submission
 function validateForm() {
     var firstName = document.getElementById("firstName").value.trim();
     var lastName = document.getElementById("lastName").value.trim();

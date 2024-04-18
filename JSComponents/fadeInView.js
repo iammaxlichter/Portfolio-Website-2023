@@ -1,19 +1,15 @@
-// Function to handle the fade-in effect for images
+// Apply fade-in effect to elements when they come into view
 function fadeInView() {
     var content = document.querySelectorAll('.fade-in-view');
 
-    // Loop through each image
     content.forEach(function(content) {
-        // Check if the image is in the viewport
         if (isInViewport(content)) {
-            // Add the class to trigger the fade-in animation
             content.classList.add('fade-in-view-active');
         }
     });
 }
 
-
-// Function to check if an element is in the viewport
+// Check if an element is in the viewport
 function isInViewport(element) {
     var rect = element.getBoundingClientRect();
 
@@ -25,13 +21,11 @@ function isInViewport(element) {
     );
 }
 
-// Call the fadeInImages function when the page is scrolled
+// Event listener to trigger fadeInView function when the page is scrolled
 window.addEventListener('scroll', fadeInView);
 
-// Trigger the fadeInImages function once when the page loads
+// Event listener to trigger fadeInView function when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Call the function immediately
     fadeInView();
-    // Call the function again after a short delay (e.g., 500ms) to ensure images outside the initial viewport also have a chance to fade in
     setTimeout(fadeInView, 200);
 });
