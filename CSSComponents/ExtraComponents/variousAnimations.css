@@ -1,56 +1,66 @@
+/* Styling for titles in the title section with fade-in animation from the left */
 .titleSection h6 {
     opacity: 0;
     animation: fadeInFromLeft 2s ease forwards;
 }
 
+/* Styling for titles in the title section with fade-in animation */
 .titleSection h5 {
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
 
+/* Delayed animation for titles in the title section */
 .titleSection h5 {
     animation-delay: 1.2s;
-    /* Add a 2-second delay before starting the animation */
 }
 
-/* Animation for paragraph sliding from right to left */
+
+/* General fade-in animation for elements */
+.fadeIn {
+    animation: fadeIn 3s ease forwards;
+}
+
+
+/* Animation for paragraphs sliding in from the left */
 .slideInLeft {
     animation: slideInLeft 2s ease forwards;
 }
 
-/* Animation for paragraph sliding from right to left */
+
+/* Animation for paragraphs sliding in from the right */
 .slideInRight {
     animation: slideInRight 2s ease forwards;
 }
 
 
-/* Animation for paragraph sliding from right to left */
-.fadeIn {
-    animation: fadeIn 3s ease forwards;
-}
-
-/* Animation for paragraph sliding from right to left */
-.fadeInGymThis {
-    opacity:0;
-    animation: fadeInGymThis 3s ease forwards;
-}
-
-/* Animation for paragraph sliding from right to left */
-.fadeInGymThis {
-    animation-delay:2s
-}
-
-
+/* Animation for elements sliding in from the bottom */
 .slideFromBottom {
     animation: slideFromBottom 3s ease forwards;
 }
 
+
+/* Animation for elements sliding in from the top */
 .slideFromTop {
     animation: slideFromTop 3s ease forwards;
 }
 
 
-@keyframes slideFromBottom{
+/* Custom fade-in animation with delay */
+.fadeInGymThis {
+    opacity: 0;
+    animation: fadeInGymThis 3s ease forwards;
+}
+
+/* Delayed fade-in animation for specific elements */
+.fadeInGymThis {
+    animation-delay: 2s;
+}
+
+
+
+/* Keyframes for sliding animation from bottom */
+@keyframes slideFromBottom {
     from {
         opacity: 0;
         transform: translateY(100%);
@@ -62,7 +72,9 @@
     }
 }
 
-@keyframes slideFromTop{
+
+/* Keyframes for sliding animation from top */
+@keyframes slideFromTop {
     from {
         opacity: 0;
         transform: translateY(-100%);
@@ -74,7 +86,8 @@
     }
 }
 
-/* Keyframes for sliding animation */
+
+/* Keyframes for sliding animation from left */
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -87,7 +100,8 @@
     }
 }
 
-/* Keyframes for sliding animation */
+
+/* Keyframes for sliding animation from right */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -100,6 +114,8 @@
     }
 }
 
+
+/* Keyframes for fade-in animation from left */
 @keyframes fadeInFromLeft {
     from {
         opacity: 0;
@@ -112,6 +128,8 @@
     }
 }
 
+
+/* Keyframes for general fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -122,7 +140,9 @@
     }
 }
 
-@keyframes fadeInGymThis{
+
+/* Keyframes for custom fade-in animation */
+@keyframes fadeInGymThis {
     from {
         opacity: 0;
     }

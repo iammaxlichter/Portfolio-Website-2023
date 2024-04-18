@@ -1,20 +1,23 @@
-
-.slide-in-right{
-    opacity:0;
-}
-.slide-in-right-active {
-
+/* Styling for elements sliding in from the right */
+.slide-in-right {
+    opacity: 0;
+  }
+  
+  /* Animation for elements sliding in from the right */
+  .slide-in-right-active {
     animation: slideInFromRight 2s ease forwards;
-}
-
-@keyframes slideInFromRight{
+  }
+  
+  /* Keyframes for sliding animation from the right */
+  @keyframes slideInFromRight {
     from {
-        opacity:0;
-        transform: translateX(-200%);
+      opacity: 0;
+      transform: translateX(-200%);
     }
-
+  
     to {
-        transform: translateX(0);
-        opacity:1;
+      transform: translateX(0);
+      opacity: 1;
     }
-}
+  }
+  

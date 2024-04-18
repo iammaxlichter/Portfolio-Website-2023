@@ -1,28 +1,35 @@
+/* Smooth transition for transform, box-shadow, and background-color */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.6s ease;/* Smooth transition for transform and shadow */
-}
-
-.card:hover {
-    transform: scale(1.03); /* Scales up the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
-    cursor:pointer;
-}
-
-.growOnHover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-}
-
-.growOnHover:hover{
-    transform: scale(1.03); /* Scales up the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
-}
-
-
-.resumeImage {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-}
-.resumeImage:hover {
-    transform: scale(1.02); /* Scales up the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover for a "lifting" effect */
-    cursor:pointer;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.6s ease;
+  }
+  
+  /* Hover effect for card */
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  /* Smooth transition for transform and box-shadow */
+  .growOnHover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for growOnHover class */
+  .growOnHover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Smooth transition for transform and box-shadow */
+  .resumeImage {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for resumeImage class */
+  .resumeImage:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  

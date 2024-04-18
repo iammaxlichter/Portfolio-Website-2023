@@ -1,20 +1,23 @@
-
-.slide-in-left{
-    opacity:0;
-}
-.slide-in-left-active {
+/* Styling for elements sliding in from the left */
+.slide-in-left {
+    opacity: 0;
+  }
+  
+  /* Animation for elements sliding in from the left */
+  .slide-in-left-active {
     animation: slideInFromLeft 2s ease forwards;
-}
-
-@keyframes slideInFromLeft {
+  }
+  
+  /* Keyframes for sliding animation from the left */
+  @keyframes slideInFromLeft {
     from {
-        opacity:0;
-        transform: translateX(200%);
+      opacity: 0;
+      transform: translateX(200%);
     }
-
+  
     to {
-        opacity:1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
-
+  }
+  

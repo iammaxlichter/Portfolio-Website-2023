@@ -1,12 +1,14 @@
-/* Animation for the fade in code */ 
+/* Styling for elements initially hidden */
 .fade-in-view {
-    opacity:0;
+    opacity: 0;
 }
 
+/* Animation for elements to fade in */
 .fade-in-view-active {
     animation: fadeInAnimation ease 2s forwards;
 }
 
+/* Keyframes for fade-in animation */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -15,4 +17,3 @@
         opacity: 1;
     }
 }
-
