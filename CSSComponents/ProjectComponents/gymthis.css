@@ -9,10 +9,12 @@ body{
     font-size:15px;
 }
 
+
 /*Class for custom border radius*/
 .custom-border-radius {
     border-radius: 5px;
   }
+
 
 /*Hyperlink color and hover*/
 .link {
@@ -35,6 +37,7 @@ body{
 
 .custom-button:hover {
     background-color: #8D201B; 
+    color:#fbfbfb; 
 }
 
 
