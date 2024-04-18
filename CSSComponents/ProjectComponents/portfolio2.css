@@ -1,10 +1,29 @@
-#enlargedImg {
-    width: 100%; /* Ensures the image uses the full width of col-5 */
-    display: none; /* Initially hide the enlarged image */
-}
 
+#enlargedImg {
+    max-width: 100%;         /* Ensure the image is not wider than the column */
+    max-height: 80vh;        /* Limit the image height to be viewable */
+    display: none;           /* Hide the image initially */
+}
 #caption {
     display: none; /* Initially hide the caption */
+    text-align: center; /* Center-align the caption text */
+    font-size: 15px; /* Set the font size of the caption */
+    margin-top: 10px; /* Optional: Adds some space between the image and caption */
+}
+
+.custom-button {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; /* Background color */
+    border-color: #9D231B; /* Border color */
+}
+
+.custom-button:hover {
+    background-color: #8D201B; /* Change background color on hover */
+    border-color: #8D201B; /* Change border color on hover */
+    color: #fbfbfb;
 }
 
 @media (max-width: 576px) { /* Small devices (576px and below) */
@@ -20,4 +39,5 @@
     .titleSection{
         margin-top:-50px;
     }
+    
 }
