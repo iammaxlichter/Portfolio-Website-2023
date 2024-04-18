@@ -1,14 +1,57 @@
 <div class="container-fluid"
-    style="background-color: #EDEFEF; padding-top: 100px; padding-bottom: 100px; position: relative;">
+    style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px; position: relative;">
     <div class="container">
         <div class="titleSection">
             <h6 class="display-4 text-left font-weight-bold text-sm" style="margin-bottom: 0; color:#343330">Portfolio
                 Website (Ver. 2)</h6>
             <h5 class="text-left underText mb-5 mt-2" style="color: #343330; font-weight: 400; margin-bottom: 20px;">An
                 enhanced, mobile-responsive, refreshing and refactored upgrade to the original.
-                <span class="text-muted date" style="float:right; font-style: italic;">Aug. 2023 - Dec. 2023</span>
+                <span class="date" style="color: #9D231B;float:right; font-style: italic;">Aug. 2023 - Dec. 2023</span>
             </h5>
 
         </div>
+
+        <div class="row">
+            <div class="col-md-6 col-12 mt-5 pr-lg-5">
+                <!-- Placeholder for the enlarged image -->
+                <img id="enlargedImg" src="" alt="Enlarged Image">
+                <p id="caption"></p>
+
+                
+            </div>
+            <div class="col-md-6 col-12 mt-5 pl-lg-5">
+                <p class="text-center" style="font-size:24px">Click the image to enlarge it.</p>
+                <div class="row">
+                    <!-- Sample image repeated in the layout -->
+                    <div class="col-sm-4 col-4 p-1">
+                        <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo3.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                        <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo3.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                    </div>
+                    <div class="col-sm-4 col-4 p-1">
+                        <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo3.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                        <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                        <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                        <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                 </div><div class="col-sm-4 col-4 p-1">
+                    <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                    <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                    <img src="/pictures/apollo3.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                    <img src="/pictures/apollo1.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 1">
+                    <img src="/pictures/apollo2.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 2">
+                    <img src="/pictures/apollo3.png" class="img-fluid pb-1" style="cursor:pointer;" alt="Picture 1" onclick="enlargeImage(this);" data-caption="Caption for Picture 3">
+                    </div>
+                    
+                    <!-- Repeat or add more <div class="col-sm-3 p-1"> blocks with additional images if needed -->
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
 </div>

@@ -1,3 +1,12 @@
+#enlargedImg {
+    width: 100%; /* Ensures the image uses the full width of col-5 */
+    display: none; /* Initially hide the enlarged image */
+}
+
+#caption {
+    display: none; /* Initially hide the caption */
+}
+
 @media (max-width: 576px) { /* Small devices (576px and below) */
     .display-4 {
         font-size: 2rem; /* Adjust font size for small screens */
