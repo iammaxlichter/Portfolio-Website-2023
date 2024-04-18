@@ -4,6 +4,16 @@ body{
 }
 
 
+/*Class for font size 15*/
+.fs-15{
+    font-size:15px;
+}
+
+/*Class for custom border radius*/
+.custom-border-radius {
+    border-radius: 5px;
+  }
+
 /*Hyperlink color and hover*/
 .link {
     color:#9D231B;
