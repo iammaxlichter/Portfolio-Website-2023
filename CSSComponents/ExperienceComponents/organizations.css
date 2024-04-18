@@ -1,9 +1,19 @@
+/* Global styles */
 body{  
     font-family: 'Libre Franklin', sans-serif;
 }
-@media (max-width: 576px) { /* Small devices (576px and below) */
+
+
+/* Font size 15px */
+.fs-15{
+    font-size:15px;
+}
+
+
+/* Media query for small devices */
+@media (max-width: 576px) {
     .display-4 {
-        font-size: 2rem; /* Adjust font size for small screens */
+        font-size: 2rem;
     }
     .underText{
         font-size: .8rem
