@@ -1,75 +1,100 @@
+/*The whole page has the characteristics below*/
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
 /* Base styles */
 .navbar {
-    background-color: #343330; /* Light background, consider using a gradient or a subtle pattern for more flair */
-    box-shadow: 0 3px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    padding: 1rem 2rem; /* Adjust padding for better spacing */
+    background-color: #343330;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
 }
 
+/* Text color style */
+.text-fb {
+    color: #fbfbfb;
+}
+
+/* Font size style */
+.fs-15 {
+    font-size: 15px;
+}
+
+/* Navbar brand style */
 .navbar-brand {
-    font-size: 28px; /* Slightly larger for prominence */
-    font-weight: 600; /* Bold for impact */
-    color: #fbfbfb; /* Consider a unique color or gradient text */
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 28px;
+    font-weight: 600;
+    color: #fbfbfb;
+    transition: color 0.3s ease;
 }
 
+/* Navbar link style */
 .nav-link {
-    font-size: 15px; /* Larger for readability */
-    font-weight: 400; /* Medium weight for better visibility */
-    color: #fbfbfb; /* Soft black for text */
-    margin-right: 25px; /* Increase spacing between links */
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 15px;
+    font-weight: 400;
+    color: #fbfbfb;
+    margin-right: 25px;
+    transition: color 0.3s ease;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: #fbfbfb; /* Highlight color on hover/focus */
-    text-decoration: none; /* No underline on hover */
+/* Hover effect for navbar links */
+.nav-link:hover,
+.nav-link:focus {
+    color: #fbfbfb;
+    text-decoration: none;
 }
 
+/* Navbar toggler style */
 .navbar-toggler {
-    border-color: #fbfbfb; /* Lighter border color */
+    border-color: #fbfbfb;
 }
 
+/* Active link style */
 .nav-link.active {
     font-weight: bold;
-    color: #fbfbfb; /* Active link color */
+    color: #fbfbfb;
 }
 
+/* Active dropdown item style */
 .dropdown-item.active {
-    color: #fbfbfb; /* Active link color */
+    color: #fbfbfb;
     font-weight: bold;
     background-color: #343330;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #555;
+}
+
+/* Active nav item style */
+.nav-item.active .nav-link {
+    color: #fbfbfb;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+}
+
+/* Custom toggler styles */
+.custom-toggler {
+    border-color: #fbfbfb;
+    border: none;
+}
+
+/* Custom toggler icon */
+.custom-toggler .navbar-toggler-icon {
+    border: none;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Focus style for custom toggler */
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .navbar-nav .nav-link {
-        padding: 0.5rem .1rem; /* Adjust padding for vertical nav on mobile */
+        padding: 0.5rem .1rem;
     }
 }
-
-.dropdown-item:hover {
-    background-color: #555; /* Change this to the desired hover color */
-}
-
-/* Optional: Highlight the current page link */
-.nav-item.active .nav-link {
-    color: #fbfbfb; /* Highlight color */
-    background-color: #fbfbfb; /* Subtle background highlight */
-    border-radius: 5px; /* Rounded corners for the active link */
-}
-
-
-.custom-toggler {
-    border-color: #fbfbfb;
-    border:none;
-  }
-  
-  .custom-toggler .navbar-toggler-icon {
-    border:none;
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-  
-  .custom-toggler:focus {
-    outline: none;
-    box-shadow: none;
-  }

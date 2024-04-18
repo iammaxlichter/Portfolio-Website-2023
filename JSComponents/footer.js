@@ -1,8 +1,3 @@
-// Scrolls to the top of the page smoothly
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 // Opens the share modal and fills in the share link
 function openShareModal(event) {
   event.preventDefault();  // Prevent default action

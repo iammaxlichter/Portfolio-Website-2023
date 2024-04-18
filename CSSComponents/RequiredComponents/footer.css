@@ -1,93 +1,91 @@
+/* Base styles for the whole page */
 body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
+/* Footer styling */
 footer {
     background-color: #343330;
-    /* Maintaining a light theme */
     color: #fbfbfb;
-    /* Dark text for contrast */
     padding: 40px 20px;
-    /* Spacious padding for layout */
 }
 
-/* Social Icons Styling */
+/* Font size 16px */
+.fs-16 {
+    font-size: 16px;
+}
+
+/* Font size 12px */
+.fs-12 {
+    font-size: 12px;
+}
+
+/* Font size 15px */
+.fs-15 {
+    font-size: 15px;
+}
+
+/* Social icons styling */
 .footerCurrent .social-icons a {
     margin: 0 15px;
-    /* Space out icons */
     color: #fbfbfb;
-    /* Icon color */
     font-size: 20px;
-    /* Size of icons */
     transition: color 0.2s ease, transform 0.2s ease;
-    /* Animation for hover */
 }
 
+/* Hover effect for social icons */
 .footerCurrent .social-icons a:hover {
     color: #dbdbdb;
-    /* Highlight color on hover */
     transform: scale(5.1);
-    /* Slight enlargement on hover */
 }
 
-/* Text Styling */
+/* Name and copyright text styling */
 .footerCurrent .name,
 .footer-container .copyright {
     font-size: 16px;
-    /* Clear font size */
     margin-top: 15px;
-    /* Proper spacing */
     transition: color 0.2s ease;
-    /* Smooth color transition */
 }
 
-/* Enhanced Share Buttons */
+/* Share buttons styling */
 .share-icons .btn {
     background-color: #fbfbfb;
-    /* Light background for buttons */
     color: #343330;
     margin: 5px;
-    /* Margin around buttons */
     transition: background-color 0.2s, color 0.2s;
-    /* Smooth transition */
 }
 
+/* Hover effect for share buttons */
 .share-icons .btn:hover {
     background-color: #343330;
-    /* Highlight background on hover */
     color: #fbfbfb;
-    /* White text on hover */
 }
 
-.copyButton{
-    color:#343330;
+/* Copy button styling */
+.copyButton {
+    color: #343330;
     background-color: #fbfbfb;
 }
 
+/* Hover effect for copy button */
 .copyButton:hover {
     background-color: #343330;
     border: 1px solid #fbfbfb;
 }
 
-/* Modal Customization */
+/* Modal customization */
 #shareModal .modal-content {
     background-color: #343330;
-    /* Keeping the modal light */
     color: #333;
-    /* Ensuring text is readable */
     border-radius: 5px;
-    /* Rounded corners for modern look */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 3D shadow effect */
 }
 
+/* Modal backdrop styling */
 #modalBackdrop {
     background-color: rgba(12, 12, 12, 0.4);
-    /* Semi-transparent backdrop */
     display: none;
-    /* Initially hidden */
     position: fixed;
-    /* Full screen */
     top: 0;
     left: 0;
     width: 100%;
@@ -95,16 +93,18 @@ footer {
     z-index: 1040;
 }
 
-/* Applying transitions for smooth appearance */
+/* Transition effects for modal and modal backdrop */
 #shareModal,
 #modalBackdrop {
     transition: visibility 0.3s, opacity 0.3s ease-in-out;
 }
 
+/* Transition effect for modal dialog */
 #shareModal .modal-dialog {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Centered modal dialog */
 .modal-dialog-centered {
     opacity: 1;
     transform: scale(1);
