@@ -6,6 +6,5 @@ mymuse pictures and alt text
 portfolio 2022 website pictures and alt text
 ally href links
 portfolio 1 github href link
-signet1 pictures ant alt text. same with ssg
-
-start and finish index
+signet1 pictures and alt text. same with ssg
+hover for index featured & pictures for index
