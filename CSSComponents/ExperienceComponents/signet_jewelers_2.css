@@ -1,10 +1,12 @@
+/* Global class*/
 body{  
     font-family: 'Libre Franklin', sans-serif;
 }
 
-@media (max-width: 576px) { /* Small devices (576px and below) */
+/*For smaller screen sizes*/
+@media (max-width: 576px) { 
     .display-4 {
-        font-size: 2rem; /* Adjust font size for small screens */
+        font-size: 2rem; 
     }
     .underText{
         font-size: .8rem
