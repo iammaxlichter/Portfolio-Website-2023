@@ -29,9 +29,9 @@
 <body>
 
     <!-- Navigation bar, Main content, and footer -->
-    <nav id="navbar" class="bg-white sticky-top"></nav>
+    <nav id="navbar" class="sticky-top"></nav>
     <div id="mainContent"></div>
-    <footerCurrent id="footerCurrent"></footerCurrent>
+    <div id="footer"></div>
 
     <script>
 
@@ -42,7 +42,7 @@
                 .then(html => {
                     document.getElementById(targetId).innerHTML = html;
                     // If targetId is 'footer', add event listener for copy button click
-                    if (targetId === 'footerCurrent') {
+                    if (targetId === 'footer') {
                         document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
                     }
 
@@ -55,7 +55,7 @@
         // Call fetchAndInsert function for navbar, main content, and footer
         fetchAndInsert('HTMLcomponents/RequiredComponents/navbar.html', 'navbar');
         fetchAndInsert('HTMLcomponents/ExperienceComponents/mainSignet2.html', 'mainContent');
-        fetchAndInsert('HTMLcomponents/RequiredComponents/footer.html', 'footerCurrent');
+        fetchAndInsert('HTMLcomponents/RequiredComponents/footer.html', 'footer');
     </script>
 
 
