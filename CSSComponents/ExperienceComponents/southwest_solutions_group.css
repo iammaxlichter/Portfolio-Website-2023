@@ -1,11 +1,25 @@
+/* Global class */
 body{  
     font-family: 'Libre Franklin', sans-serif;
 }
 
 
-@media (max-width: 576px) { /* Small devices (576px and below) */
+/* Font size 15 */
+.fs-15{
+    font-size:15px;
+}
+
+
+/* Font underline */
+.font-underline{
+    text-decoration: underline;
+}
+
+
+/* for smaller screens */
+@media (max-width: 576px) { 
     .display-4 {
-        font-size: 2rem; /* Adjust font size for small screens */
+        font-size: 2rem;
     }
     .underText{
         font-size: .8rem

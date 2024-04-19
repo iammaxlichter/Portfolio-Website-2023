@@ -30,9 +30,3 @@ body{
         margin-top:-50px;
     }
 }
-@media (max-width: 387px) {
-    .col-md-11 p {
-      font-size: 14px; /* Adjust the font size as needed */
-    }
-  }
-  
