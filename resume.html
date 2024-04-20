@@ -27,36 +27,188 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+    
+            <!-- logo and name in the top left -->
+            <a class="navbar-brand" href="#">
+                <!--<img src="/Pictures/logo.png" alt="Your Logo" width="40" style="transform:translate(-20%, -5%); color: #343330"
+              height="40" class="d-inline-block align-top">-->
+                <span style="color:#fff">Max Lichter</span>
+            </a>
+    
+            <!-- Hamburger button code -->
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="pt-1 pb-2 pr-1 pl-1" style="border: 1px solid white; border-radius: 5px;">
+                    <span class="navbar-toggler-icon"></span></span>
+            </button>
+    
+            <!-- Whole top right section of the navbar -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style="margin-right: -35px">
+                <div class="navbar-nav">
+    
+                    <!-- "Home" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="index.html?page=index"
+                        data-page="index">Home </a>
+    
+                    <!-- all of the "Projects" as well as the drop down with it code-->
+                    <div class="nav-item dropdown" style="margin-right:-10px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fbfbfb;">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left-custom"
+                            style="background-color: #343330; border:2px solid #343330;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white fs-15"  href="gymthis.html?page=gymthis"
+                                data-page="gymthis">GymThis</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="soccer_robot.html?page=soccer_robot" data-page="soccer_robot">Soccer Robot</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="allys_photography.html?page=allys_photography" data-page="allys_photography">Ally's
+                                Photography</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="portfolio_2.html?page=portfolio_2" data-page="portfolio_2">Portfolio Website 2023</a>
+                            <a class="dropdown-item text-white fs-15" href="mymuse.html?page=mymuse"
+                                data-page="mymuse">MyMuse</a>
+                            <a class="dropdown-item text-white fs-15" href="apollo.html?page=apollo"
+                                data-page="apollo">Apollo</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="portfolio_1.html?page=portfolio_1" data-page="portfolio_1">Portfolio Website 2022</a>
+                        </div>
+                    </div>
+    
+                    <!-- all of the "Experience" as well as the drop down with it code-->
+                    <div class="nav-item dropdown" style="margin-right:-10px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fbfbfb;">
+                            Experience
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left-custom"
+                            style="background-color: #343330; border:2px solid #343330;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white fs-15"
+                                href="signet_jewelers_2.html?page=signet_jewelers_2" data-page="signet_jewelers_2">Signet
+                                Jewelers 2024</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="southwest_solutions_group.html?page=southwest_solutions_group"
+                                data-page="southwest_solutions_group">Southwest Solutions Group</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="signet_jewelers_1.html?page=signet_jewelers_1" data-page="signet_jewelers_1">Signet
+                                Jewelers 2023</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="organizations.html?page=organizations" data-page="organizations">UT Dallas
+                                Organizations</a>
+                        </div>
+                    </div>
+    
+                    <!-- "Resume" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="resume.html?page=resume"
+                        data-page="resume">Resume</a>
+    
+                    <!-- "Contact" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="contact.html?page=contact"
+                        data-page="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid fadeIn text-center pt-5 pb-5" style="background-color: #fbfbfb;">
+    
+        <!-- Download Button and Text -->
+        <div class="row justify-content-center pt-4">
+            <div class="col-auto mb-3">
+                <span class="d-inline-block fs-24 mr-3" style="color:#343330;">Spring 2024 Resume</span>
+                <a href="/Pictures/Spring 2024 Resume Max Lichter.pdf" download  class="btn btn-outline-secondary">
+                    <i  class="fas fa-download mt-0"></i>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Resume Image with Border -->
+        <div class="row pb-5">
+            <div class="col pt-3">
+                <a href="/Pictures/Spring 2024 Resume Max Lichter.pdf" download>
+                <img src="/Pictures/resumePicture.svg" alt="Resume" class="resumeImage img-fluid mw-90 h-auto" style="border: 2px solid #343330;"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footerCurrent text-black text-center">
 
-    <!-- Navigation bar, Main content, and footer -->
-    <nav id="navbar" class="sticky-top"></nav>
-    <div id="mainContent"></div>
-    <div id="footer"></div>
-
-    <script>
-
-        // Function to fetch and insert HTML content into specified element
-        function fetchAndInsert(url, targetId) {
-            fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById(targetId).innerHTML = html;
-                    // If targetId is 'footer', add event listener for copy button click
-                    if (targetId === 'footer') {
-                        document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
-                    }
-
-                    handleNavbar();
-                });
-
-
-        }
-
-        // Call fetchAndInsert function for navbar, main content, and footer
-        fetchAndInsert('HTMLcomponents/RequiredComponents/navbar.html', 'navbar');
-        fetchAndInsert('HTMLcomponents/MainComponents/Mainresume.html', 'mainContent');
-        fetchAndInsert('HTMLcomponents/RequiredComponents/footer.html', 'footer');
-    </script>
+        <!-- Top row, social icons -->
+        <div class="social-icons">
+          <a href="https://github.com/iammaxlichter" target="_blank" class="social-icon"><i
+              class="fs-16 fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/iammaxlichter/" target="_blank" class="=social-icon"><i
+              class="fs-16 fab fa-linkedin"></i></a>
+          <a href="mailto:iammaxlichter@gmail.com" class="=social-icon"><i class="fs-16 fas fa-envelope"></i></a>
+          <a href="#" onclick="openShareModal(event)" class="=social-icon"><i class="fs-16 fas fa-share-alt"></i></a>
+        </div>
+      
+        <!-- Second row, my name -->
+        <div class="name fs-15" style="color: #fbfbfb;">
+          Max Lichter
+        </div>
+      
+        <!-- Third row, copyright -->
+        <div class="copyright mt-3 fs-12" style="color: #fbfbfb;">
+          © 2024 Max Lichter. All rights reserved.
+        </div>
+      
+        <!-- Backdrop for modal -->
+        <div id="modalBackdrop" class="modal-backdrop"></div>
+        <div id="shareModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+      
+              <!-- Modal Header -->
+              <div class="modal-header text-center justify-content-center" style="border-bottom: none;">
+                <h4 class="modal-title font-weight-bold fs-15" style="color:white;">Share</h4>
+              </div>
+              <div class="sharethis-inline-share-buttons"></div>
+      
+              <!-- Modal Body -->
+              <div class="modal-body text-center">
+      
+                <div class="input-group">
+      
+                  <!-- text in the center to the left of the copy button -->
+                  <input id="shareLink" type="text" class="form-control bg-light"
+                    value="https://iammaxlichter.github.io" readonly>
+      
+                  <!-- Copy button -->
+                  <div class="input-group-append">
+                    <button id="copyButton" class="copyButton btn btn-outline-secondary" type="button">
+                      <i class="far fa-copy"></i>
+                    </button>
+                  </div>
+      
+                </div>
+      
+                <!-- Success message for copying to clipboard-->
+                <div id="copySuccessMessage" class="mt-2 fs-15"
+                  style="display: none; color: #fbfbfb;">
+                  Successfully copied to clipboard!
+                </div>
+      
+              </div>
+      
+              <!-- All the share icons-->
+              <div class="row mt-1 justify-content-center share-icons">
+                <div class="text-center">
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fiammaxlichter.github.io"
+                    target="_blank" class="btn btn-outline-secondary" style="border:1px solid #fbfbfb"><i
+                      class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="text-center">
+                  <a href="mailto:?subject=Check%20out%20this%20website&body=Here's%20a%20link%20to%20a%20website%20I%20thought%20you%20might%20like:%20https%3A%2F%2Fiammaxlichter.github.io"
+                    class="btn btn-outline-secondary" style="border:1px solid #fbfbfb"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </footer>
 
 
     <!-- jQuery -->

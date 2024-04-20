@@ -30,37 +30,338 @@
 
 <body>
 
-    <!-- Navigation bar, Main content, and footer -->
-    <nav id="navbar" class="sticky-top"></nav>
-    <div id="mainContent"></div>
-    <div id="footer"></footer>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
 
-    <script>
+            <!-- logo and name in the top left -->
+            <a class="navbar-brand" href="#">
+                <!--<img src="/Pictures/logo.png" alt="Your Logo" width="40" style="transform:translate(-20%, -5%); color: #343330"
+              height="40" class="d-inline-block align-top">-->
+                <span style="color:#fff">Max Lichter</span>
+            </a>
 
-        // Function to fetch and insert HTML content into specified element
-        function fetchAndInsert(url, targetId) {
-            fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById(targetId).innerHTML = html;
-                    // If targetId is 'footer', add event listener for copy button click
-                    if (targetId === 'footer') {
-                        document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
-                    }
+            <!-- Hamburger button code -->
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="pt-1 pb-2 pr-1 pl-1" style="border: 1px solid white; border-radius: 5px;">
+                    <span class="navbar-toggler-icon"></span></span>
+            </button>
 
-                    handleNavbar();
-                });
+            <!-- Whole top right section of the navbar -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"
+                style="margin-right: -35px">
+                <div class="navbar-nav">
 
+                    <!-- "Home" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="index.html?page=index"
+                        data-page="index">Home </a>
 
-        }
+                    <!-- all of the "Projects" as well as the drop down with it code-->
+                    <div class="nav-item dropdown" style="margin-right:-10px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fbfbfb;">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left-custom"
+                            style="background-color: #343330; border:2px solid #343330;"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white fs-15" href="gymthis.html?page=gymthis"
+                                data-page="gymthis">GymThis</a>
+                            <a class="dropdown-item text-white fs-15" href="soccer_robot.html?page=soccer_robot"
+                                data-page="soccer_robot">Soccer Robot</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="allys_photography.html?page=allys_photography"
+                                data-page="allys_photography">Ally's
+                                Photography</a>
+                            <a class="dropdown-item text-white fs-15" href="portfolio_2.html?page=portfolio_2"
+                                data-page="portfolio_2">Portfolio Website 2023</a>
+                            <a class="dropdown-item text-white fs-15" href="mymuse.html?page=mymuse"
+                                data-page="mymuse">MyMuse</a>
+                            <a class="dropdown-item text-white fs-15" href="apollo.html?page=apollo"
+                                data-page="apollo">Apollo</a>
+                            <a class="dropdown-item text-white fs-15" href="portfolio_1.html?page=portfolio_1"
+                                data-page="portfolio_1">Portfolio Website 2022</a>
+                        </div>
+                    </div>
 
-        // Call fetchAndInsert function for navbar, main content, and footer
-        fetchAndInsert('HTMLcomponents/RequiredComponents/navbar.html', 'navbar');
-        fetchAndInsert('HTMLcomponents/ProjectsComponents/mainMyMuse.html', 'mainContent');
-        fetchAndInsert('HTMLcomponents/RequiredComponents/footer.html', 'footer');
-    </script>
+                    <!-- all of the "Experience" as well as the drop down with it code-->
+                    <div class="nav-item dropdown" style="margin-right:-10px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fbfbfb;">
+                            Experience
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left-custom"
+                            style="background-color: #343330; border:2px solid #343330;"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white fs-15"
+                                href="signet_jewelers_2.html?page=signet_jewelers_2"
+                                data-page="signet_jewelers_2">Signet
+                                Jewelers 2024</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="southwest_solutions_group.html?page=southwest_solutions_group"
+                                data-page="southwest_solutions_group">Southwest Solutions Group</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="signet_jewelers_1.html?page=signet_jewelers_1"
+                                data-page="signet_jewelers_1">Signet
+                                Jewelers 2023</a>
+                            <a class="dropdown-item text-white fs-15" href="organizations.html?page=organizations"
+                                data-page="organizations">UT Dallas
+                                Organizations</a>
+                        </div>
+                    </div>
 
+                    <!-- "Resume" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="resume.html?page=resume"
+                        data-page="resume">Resume</a>
 
+                    <!-- "Contact" code -->
+                    <a class="nav-item nav-link mr-3" style="color:#fbfbfb;" href="contact.html?page=contact"
+                        data-page="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+
+            <!-- Top section with the title, description, and date -->
+            <div class="titleSection">
+                <h6 class="display-4 text-left font-weight-bold text-sm" style="color:#343330">MyMuse (ACM
+                    Projects)</h6>
+                <h5 class="underText text-left font-weight-normal mb-5 mt-2" style="color: #343330;">
+                    A mobile app to share music with all of your friends.
+                    <span class="date float-right font-italic" style="color:#9D231B;">Sept. 2022 - Nov. 2022</span>
+                </h5>
+            </div>
+
+            <div class="row">
+
+                <!-- Top left section with the paragraphs -->
+                <div class="col-md-6 pr-lg-5 mt-3">
+
+                    <!-- First paragraph-->
+                    <p class="slide-in-right text-left fs-15">
+                        At UT Dallas, there exists an organization known as <span class="font-weight-bold">ACM</span> or
+                        the
+                        <span class="font-italic">"Association of Computing Machinery."</span>
+                        ACM is built upon five separate divisions. One of those divisions is known as ACM Projects. ACM
+                        Projects is a semester-long guided project initiative for those new to software development,
+                        teaching collaborative tools, new technologies, and core development principles complimentary to
+                        undergraduate curriculum. MyMuse was one of 10 unique projects (consisting of 4-5 people) in
+                        Fall
+                        2022's rendition of ACM Projects.
+                        <br>
+                    </p>
+
+                    <!-- Second paragraph -->
+                    <p class="slide-in-right text-left fs-15">
+                        To summarize what our app does, <span class="font-weight-bold">MyMuse is a social media platform
+                            app
+                            that allows you to
+                            share music with you friends at any random point in the day, can show you what your friends
+                            are
+                            listening to at the moment, and allow you to comment on your friends post's as well.</span>
+                        The
+                        idea for
+                        MyMuse was created by my groups project manager <a
+                            href="https://www.linkedin.com/in/faiza-rahman301/" class="link" target="_blank">Faiza
+                            Rahman</a>. Faiza was
+                        my teammates and I's
+                        guidance along the way and really helped us develop a total understanding of what we were
+                        creating.
+                    </p>
+
+                </div>
+
+                <!-- Top Right section with the carousel -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center pl-lg-5">
+                    <div id="carouselFade" class="carousel slide carousel-fade topContent slide-in-left"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/Pictures/apollo1.png" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Pictures/apollo2.png" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Pictures/apollo3.png" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <!-- Video on the bottom left -->
+                <div class="col-md-6 pr-lg-5 d-flex align-items-center justify-content-center">
+                    <div class="slide-in-right">
+                        <!-- <div class="container p-0" style="aspect-ratio: 16/9;">
+                            <iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/aXQ4mp0hGeI"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div> -->
+                        <p class="text-center fs-15">Skip this video to the 1:16:15 mark to see our
+                            presentation</p>
+                    </div>
+                </div>
+
+                <!-- Paragraphs on the bottom right-->
+                <div class="col-md-6 pl-lg-5 mt-2">
+
+                    <!-- Third paragraph -->
+                    <p class="slide-in-left text-left fs-15">
+                        I, along with my fellow co-creators
+                        <a href="https://www.linkedin.com/in/manasivipat/" class="link" target="_blank">Manasi
+                            Vipat</a>,
+                        <a href="https://www.linkedin.com/in/eman-abu-ali/" class="link" target="_blank">Eman
+                            Abu-Ali</a>,
+                        <a href="https://www.linkedin.com/in/hamzkhawaj/" class="link" target="_blank">Hamza
+                            Khawaja</a>,
+                        and
+                        <a href="https://www.linkedin.com/in/dheeptha-kadiam-00a962229/" class="link"
+                            target="_blank">Dheeptha
+                            Kadiam</a>,
+                        split ourselves into two teams, front-end & back-end development.
+                        I opted for the front-end team as front-end is something I enjoy very much and was looking to
+                        expand
+                        my skillset in.
+                        <br>
+                    </p>
+
+                    <!-- Fourth paragraph -->
+                    <p class="slide-in-left text-left fs-15">
+                        We coded MyMuse using <span class="font-weight-bold">Flutter as our framework, Dart as our
+                            programming language, Firebase
+                            to store the user information, Apple Music API for our search and upload song feature, and
+                            Android
+                            Studio Emulator to see our progress as we coded</span>. We had 12 weeks to create our fully
+                        functional app,
+                        and at the end of said 12 weeks, we presented our project to hundreds of students, parents, and
+                        peers. Along with that, we were also judged by a group of judges that work inside the tech
+                        industry,
+                        with companies such as Chase, Capital One, and AT&T. The video to the right is known as
+                        "Presentation Night", and it's exactly how it sounds. all 10 teams gather together to share what
+                        they created in the past 12 weeks.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="row mt-5">
+
+                <!-- Final bottom section -->
+                <div class="col-md-9 mx-auto">
+
+                    <!-- Fifth paragraph -->
+                    <p class="slide-in-bottom text-left fs-15">
+                        One of the most significant parts of my recent trip through the halls of Computer Science is my
+                        work
+                        with MyMuse. Throughout this ordeal, I not only explored the complexities of creating a useful
+                        mobile application but also managed my diverse team through the maze of competing schedules and
+                        code
+                        conundrums. The experience was more than just troubleshooting code; it was a harmonious blend of
+                        cooperation, handling conflict, and flexible thinking. Even with the unavoidable setbacks, we
+                        persisted and came out stronger as people and programmers as a result of facing the trials and
+                        tribulations of real life. <br>
+                    </p>
+
+                    <!-- MyMuse GitHub button -->
+                    <div class="text-left slide-in-right mt-4 mb-4">
+                        <a href="https://github.com/acm-projects/MyMuse" target="_blank">
+                            <button class="btn btn-md custom-button custom-border-radius">GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footerCurrent text-black text-center">
+
+        <!-- Top row, social icons -->
+        <div class="social-icons">
+            <a href="https://github.com/iammaxlichter" target="_blank" class="social-icon"><i
+                    class="fs-16 fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/iammaxlichter/" target="_blank" class="=social-icon"><i
+                    class="fs-16 fab fa-linkedin"></i></a>
+            <a href="mailto:iammaxlichter@gmail.com" class="=social-icon"><i class="fs-16 fas fa-envelope"></i></a>
+            <a href="#" onclick="openShareModal(event)" class="=social-icon"><i class="fs-16 fas fa-share-alt"></i></a>
+        </div>
+
+        <!-- Second row, my name -->
+        <div class="name fs-15" style="color: #fbfbfb;">
+            Max Lichter
+        </div>
+
+        <!-- Third row, copyright -->
+        <div class="copyright mt-3 fs-12" style="color: #fbfbfb;">
+            © 2024 Max Lichter. All rights reserved.
+        </div>
+
+        <!-- Backdrop for modal -->
+        <div id="modalBackdrop" class="modal-backdrop"></div>
+        <div id="shareModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center justify-content-center" style="border-bottom: none;">
+                        <h4 class="modal-title font-weight-bold fs-15" style="color:white;">Share</h4>
+                    </div>
+                    <div class="sharethis-inline-share-buttons"></div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body text-center">
+
+                        <div class="input-group">
+
+                            <!-- text in the center to the left of the copy button -->
+                            <input id="shareLink" type="text" class="form-control bg-light"
+                                value="https://iammaxlichter.github.io" readonly>
+
+                            <!-- Copy button -->
+                            <div class="input-group-append">
+                                <button id="copyButton" class="copyButton btn btn-outline-secondary" type="button">
+                                    <i class="far fa-copy"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Success message for copying to clipboard-->
+                        <div id="copySuccessMessage" class="mt-2 fs-15" style="display: none; color: #fbfbfb;">
+                            Successfully copied to clipboard!
+                        </div>
+
+                    </div>
+
+                    <!-- All the share icons-->
+                    <div class="row mt-1 justify-content-center share-icons">
+                        <div class="text-center">
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fiammaxlichter.github.io"
+                                target="_blank" class="btn btn-outline-secondary" style="border:1px solid #fbfbfb"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="text-center">
+                            <a href="mailto:?subject=Check%20out%20this%20website&body=Here's%20a%20link%20to%20a%20website%20I%20thought%20you%20might%20like:%20https%3A%2F%2Fiammaxlichter.github.io"
+                                class="btn btn-outline-secondary" style="border:1px solid #fbfbfb"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
