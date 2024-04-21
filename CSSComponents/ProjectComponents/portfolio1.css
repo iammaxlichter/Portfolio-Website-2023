@@ -36,6 +36,24 @@ body{
     color:#fbfbfb; 
 }
 
+/*Live Website button*/
+.custom-button2 {
+    width: 40%;
+    height: 50px;
+    font-weight: 400;
+    color: #9D231B;
+    background-color: #fbfbfb;
+    border-color: #9D231B;
+}
+
+.custom-button2:hover {
+    background-color: #8D201B; 
+    border-color: #8D201B;
+    color: #fbfbfb;
+}
+
+
+
 
 /*When the screen is small, the title section is adjusted accordingly*/
 @media (max-width: 576px) { 
