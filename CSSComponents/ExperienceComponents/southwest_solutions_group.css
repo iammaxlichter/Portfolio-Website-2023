@@ -3,6 +3,10 @@ body{
     font-family: 'Libre Franklin', sans-serif;
 }
 
+/* Font size 15 */
+.fs-12{
+    font-size:12px;
+}
 
 /* Font size 15 */
 .fs-15{
@@ -15,6 +19,15 @@ body{
     text-decoration: underline;
 }
 
+/* programming language pictures */
+.programmingLanguages{
+    width:15%
+}
+
+/* Giant SSG group pictures */
+.ssgGroupPhoto{
+    width:70%
+}
 
 /* for smaller screens */
 @media (max-width: 576px) { 
@@ -29,5 +42,11 @@ body{
     }
     .titleSection{
         margin-top:-50px;
+    }
+    .ssgGroupPhoto{
+        width:200%;
+    }
+    .programmingLanguages{
+        width:20%
     }
 }
