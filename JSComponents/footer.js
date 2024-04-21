@@ -43,18 +43,18 @@ function copyUrlToClipboard() {
   var text = document.getElementById("shareLink").value;
   // Copy text to clipboard
   navigator.clipboard.writeText(text)
-    .then(function () {
-      // Show success message
-      var successMessage = document.getElementById("copySuccessMessage");
-      successMessage.style.display = "block";
-      // Hide success message after 2 seconds
-      setTimeout(function () {
-        successMessage.style.display = "none";
-      }, 2000);
-    })
-    .catch(function (error) {
-      console.error('Failed to copy: ', error);
-    });
+      .then(function () {
+          // Show success message
+          var successMessage = document.getElementById("copySuccessMessage");
+          successMessage.style.display = "block";
+          // Hide success message after 2 seconds
+          setTimeout(function () {
+              successMessage.style.display = "none";
+          }, 2000);
+      })
+      .catch(function (error) {
+          console.error('Failed to copy: ', error);
+      });
 }
 
 // Closes the share modal when the Escape key is pressed
