@@ -9,6 +9,10 @@ body{
     font-size:15px;
 }
 
+/* underline font */
+.font-underline{
+    text-decoration: underline;
+}
 
 /*Class for custom border radius*/
 .custom-border-radius {

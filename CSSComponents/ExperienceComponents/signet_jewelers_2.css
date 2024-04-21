@@ -3,6 +3,17 @@ body{
     font-family: 'Libre Franklin', sans-serif;
 }
 
+/* for underlining text */
+.font-underline{
+    text-decoration: underline;
+}
+
+
+/* font size 15 */
+.fs-15{
+    font-size:15px;
+}
+
 /*For smaller screen sizes*/
 @media (max-width: 576px) { 
     .display-4 {
