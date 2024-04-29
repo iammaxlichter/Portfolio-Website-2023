@@ -123,8 +123,14 @@
             </div>
         </div>
     </nav>
-    <div class="test">
     <div class="animation-area">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center" style="width:100vh"> <!-- Changed class to text-center -->
+                    <h1 class="font-weight-light">Hello, my name is <br> <span class="font-weight-bold" style="font-size:50px;">Max Lichter</span> <br> and I'm a <span style="font-size:30px;" class="auto-type"></span></h1> <!-- Changed <k> to <span> -->
+                </div>
+            </div>
+        </div>
         <ul class="box-area">
             <li></li>
             <li></li>
@@ -134,8 +140,9 @@
             <li></li>
         </ul>
     </div>
+    
 </div>
-    <div class="container-fluid" style="background-color: #fbfbfb; padding-top: 150px; padding-bottom: 150px;">
+    <div class="container-fluid" style="background-color: #fbfbfb; border-top:4px solid #343330; padding-top: 150px; padding-bottom: 150px;">
         <div class="container">
             
         </div>
@@ -231,7 +238,15 @@
     <script src="JSComponents/footer.js"></script>
     <script src="JSComponents/slideInLeftView.js"></script>
     <script src="JSComponents/slideInBottomView.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="JSComponents/slideInRightView.js"></script>
+    <script>var typed = new Typed(".auto-type",{
+        strings : ["Software Developer", "Quality Engineer", "Web Developer", "Undegraduate CS Student"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+    </script>
 
 </body>
 
