@@ -1,3 +1,2 @@
-Start and finish home page
 Logo in the top left
 Favicon when KT sends it
