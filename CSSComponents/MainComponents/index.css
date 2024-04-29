@@ -1,21 +1,20 @@
-/* Typography */
+/* Styles for whole page */
 body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-h1 {
+h1{
     color: #fbfbfb;
     font-size: 25px;
-    font-weight: light;
+    font-weight:light;
 }
 
-span {
-    font-weight: bold;
-    color: #343330;
+span{
+    font-weight:bold;
+    color:#343330;
 }
 
-
-/* Font Sizes */
+/* Font sizes*/
 .fs-15 {
     font-size: 15px;
 }
@@ -24,26 +23,29 @@ span {
     font-size:40px;
 }
 
-.fs-50 {
-    font-size: 50px;
+.fs-50{
+    font-size:50px;
 }
 
-.fs-30 {
-    font-size: 30px;
+.fs-30{
+    font-size:30px;
 }
 
-/* Animation Area */
+
+
+/*animation top block*/
 .animation-area {
     background: -webkit-linear-gradient(to right, #9D231B, #c25643);
     background: linear-gradient(to right, #9D231B, #c25643);
     width: 100%;
     height: 88vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Box Area */
+
+/* All the css for each individual box that floats up*/
 .box-area {
     position: absolute;
     top: 0;
@@ -52,6 +54,52 @@ span {
     height: 100%;
     overflow: hidden;
 }
+
+.box-area li:nth-child(1) {
+    left: 85%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
 
 .box-area li {
     position: absolute;
@@ -64,52 +112,68 @@ span {
     bottom: -150px;
 }
 
-/* Slider */
-.slider {
-    height: 200px;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+
+/*Code for the infinite slidshow*/
+.slider{
+    height:200px;
+    margin:auto;
+    position:relative;
+    width:100%;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
 }
 
-.slide-track {
-    display: flex;
+.slide-track{
+    display:flex;
     width: calc(350px * 8);
     animation: scroll 40s linear infinite;
 }
 
-.slide {
-    height: 200px;
-    width: 350px;
+.slide{
+    height:200px;
+    width:350px;
     border: 1px solid #343330;
-    display: flex;
+    display:flex;
     align-items: center;
-    padding: 10px;
-    perspective: 100px;
+    padding:10px;
+    perspective:100px;
 }
 
-.img {
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, #fbfbfb 0%,
+    rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index:2;
+}
+
+.slider::before{
+    left:0;
+    top:0;
+}
+.slider::after{
+    right:0;
+    top:0;
+    transform:rotateZ(180deg);
+}
+
+/*Code for the whole hover over the picture*/
+.image__img{
+    display: block;
     width: 100%;
-    margin-right: 40px;
-    transition: transform 1s;
 }
 
-.image__title{
-    font-size: 1.4em;
-    font-weight: bold;
-}
-
-/* Image Overlay */
-.image__overlay {
+.image__overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background:  rgba(0,0,0,0.6);
     color: #fbfbfb;
     display: flex;
     flex-direction: column;
@@ -119,28 +183,24 @@ span {
     transition: opacity .30s;
 }
 
-.image__overlay--blur {
+.image__overlay--blur{
     backdrop-filter: blur(10px);
 }
 
-.image__overlay:hover {
+.image__overlay:hover{
     opacity: 1;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 576px) {
-    .topTitle {
-        font-size: 1.5rem;
-    }
-    .featured {
-        font-size: 2.1rem;
-    }
-    .slide-track {
-        animation: scroll 10s linear infinite;
-    }
+.image__title{
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
-/* Keyframes */
+.image__description{
+    margin-top:.25em;
+}
+
+
 @keyframes animate {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -153,11 +213,24 @@ span {
     }
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
     }
-    100% {
-        transform: translateX(calc(-350px * 4));
+    100%{
+        transform:translateX(calc(-350px*4))
+    }
+}
+
+/* for smaller screens */
+@media (max-width: 576px) {
+    .topTitle {
+        font-size: 1.5rem;
+    }
+    .featured{
+        font-size:2.1rem;
+    }
+    .slide-track{
+        animation: scroll 10s linear infinite;
     }
 }
