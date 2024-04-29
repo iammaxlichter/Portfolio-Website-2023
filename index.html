@@ -129,7 +129,7 @@
             <div class="col-md-12 col-12 p-4">
                 <div class="text-center fadeIn" style="width:auto"> <!-- Changed class to text-center -->
                     <h1 class="font-weight-light">Hello, my name is <br> <span class="font-weight-bold"
-                            style="font-size:50px;">Max Lichter</span> <br> and I'm an <span style="font-size:30px;"
+                            style="font-size:50px;">Max Lichter</span> <br> and I'm a <span style="font-size:30px;"
                             class="auto-type"></span></h1> <!-- Changed <k> to <span> -->
                 </div>
             </div>
@@ -175,7 +175,8 @@
                     <a href="signet_jewelers_2.html">
                         <div class="slide mr-4">
                             <span class="container" style="height:100%">
-                                <img style="height:100%" class="image__img" src=".\Pictures\ExperiencePictures\signetLogo.png">
+                                <img style="height:100%" class="image__img"
+                                    src=".\Pictures\ExperiencePictures\signetLogo.png">
 
                                 <div class="image__overlay image__overlay--blur">
                                     <div class="image__title">Signet Jewelers</div>
@@ -235,7 +236,8 @@
                     <a href="signet_jewelers_2.html">
                         <div class="slide mr-4">
                             <span class="container" style="height:100%">
-                                <img style="height:100%" class="image__img" src=".\Pictures\ExperiencePictures\signetLogo.png">
+                                <img style="height:100%" class="image__img"
+                                    src=".\Pictures\ExperiencePictures\signetLogo.png">
 
                                 <div class="image__overlay image__overlay--blur">
                                     <div class="image__title">Signet Jewelers</div>
@@ -382,8 +384,15 @@
     <script src="JSComponents/slideInBottomView.js"></script>
     <script src="JSComponents/slideInRightView.js"></script>
     <script src="JSComponents/hoverForIndex.js"></script>
-    <script src="JSComponents/typingAnimation.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Software Developer.", "Quality Engineer.", "Web Developer.", "Undergraduate CS Student."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
 
 </body>
 
