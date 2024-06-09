@@ -1,0 +1,72 @@
+/* Styles for whole page */
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1{
+    color: #fbfbfb;
+    font-size: 25px;
+    font-weight:light;
+}
+
+span{
+    font-weight:bold;
+    color:#343330;
+}
+
+/* Font sizes*/
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-40{
+    font-size:40px;
+}
+
+.fs-50{
+    font-size:50px;
+}
+
+.fs-30{
+    font-size:30px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #343330;
+
+  }
+
+  .image-container a {
+    text-decoration: none; /* Remove default underline */
+    color:#343330;
+}
+
+.image-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: #343330 ; /* Change the underline color */
+}
+
+  /* for smaller screens */
+@media (max-width: 576px) {
+    .topTitle {
+        font-size: 1.5rem;
+    }
+    .featured{
+        font-size:2.1rem;
+    }
+    .slide-track{
+        animation: scroll 10s linear infinite;
+    }
+    .image-text{
+        font-size:11px;
+    }
+}
