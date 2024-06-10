@@ -57,16 +57,24 @@ span{
 
   /* for smaller screens */
 @media (max-width: 576px) {
-    .topTitle {
-        font-size: 1.5rem;
+    .display-4 {
+        font-size: 2rem;
     }
-    .featured{
-        font-size:2.1rem;
+    .underText{
+        font-size: .8rem
     }
-    .slide-track{
-        animation: scroll 10s linear infinite;
+    .firstColPictures{
+        margin-bottom:-90px;
     }
+    .date{
+        transform:translateY(50%)
+    }
+    .titleSection{
+        margin-top:-50px;
+    }
+    
+   
     .image-text{
-        font-size:11px;
+        font-size:16px;
     }
 }
