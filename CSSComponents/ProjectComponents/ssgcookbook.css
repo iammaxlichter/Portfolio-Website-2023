@@ -1,0 +1,65 @@
+.fs-15{
+    font-size:15px;
+}
+
+.img{
+    border: 1px solid #343330;
+}
+
+.link{
+    color:#8D201B
+}
+
+.link:hover{
+    color:#8D201B;
+    font-weight: bold;
+}
+
+/*GitHub button*/
+.custom-button {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; 
+}
+
+.custom-button:hover {
+    background-color: #8D201B;
+    color:#fbfbfb; 
+}
+
+
+/*Live Website button*/
+.custom-button2 {
+    width: 40%;
+    height: 50px;
+    font-weight: 400;
+    color: #9D231B;
+    background-color: #fbfbfb;
+    border-color: #9D231B;
+}
+
+.custom-button2:hover {
+    background-color: #8D201B; 
+    border-color: #8D201B;
+    color: #fbfbfb;
+}
+
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) { 
+
+    .display-4 {
+        font-size: 2rem;
+    }
+    .underText{
+        font-size: 1rem
+    }
+
+    .date{
+        transform:translateY(50%)
+    }
+    .titleSection{
+        margin-top:-50px;
+    }
+}

@@ -55,18 +55,20 @@ span{
     text-decoration-color: #343330 ; /* Change the underline color */
 }
 
-  /* for smaller screens */
-@media (max-width: 576px) {
-    .topTitle {
-        font-size: 1.5rem;
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) { 
+
+    .display-4 {
+        font-size: 2rem;
     }
-    .featured{
-        font-size:2.1rem;
+    .underText{
+        font-size: 1rem
     }
-    .slide-track{
-        animation: scroll 10s linear infinite;
+
+    .date{
+        transform:translateY(50%)
     }
-    .image-text{
-        font-size:11px;
+    .titleSection{
+        margin-top:-50px;
     }
 }
