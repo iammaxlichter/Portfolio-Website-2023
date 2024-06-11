@@ -18,6 +18,10 @@ body{
     font-size:20px;
 }
 
+/*Border for the image*/
+.img{
+    border: 1px solid #343330
+}
 
 /*Class for custom border radius*/
 .custom-border-radius {

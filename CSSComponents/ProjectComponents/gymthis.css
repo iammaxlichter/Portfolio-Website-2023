@@ -19,6 +19,10 @@ body{
     border-radius: 5px;
   }
 
+/*Border for the image*/
+.img{
+    border: 1px solid #343330
+}
 
 /*Hyperlink color and hover*/
 .link {
