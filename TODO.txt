@@ -1,5 +1,2 @@
 Logo in the top left
 Favicon when KT sends it
-make ssgcookbook page
-make karoshi page
-make tatianas birthday website page

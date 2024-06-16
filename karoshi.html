@@ -15,12 +15,13 @@
 
     <link rel="stylesheet" href="CSSComponents/RequiredComponents/footer.css">
     <link rel="stylesheet" href="CSSComponents/RequiredComponents/navbar.css">
-    <link rel="stylesheet" href="CSSComponents/ProjectComponents/miniprojects.css">
+    <link rel="stylesheet" href="CSSComponents/ProjectComponents/karoshi.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/shareModal.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/growAnimation.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/variousAnimations.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/slideInRight.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/slideInLeftView.css">
+    <link rel="stylesheet" href="CSSComponents/ExtraComponents/fadeInView.css">
 
 
     <!-- <link rel="icon" href="Pictures/logo.png" type="image/x-icon"> -->
@@ -75,8 +76,9 @@
                                 data-page="portfolio_2">Portfolio Website 2023</a>
                             <a class="dropdown-item text-white fs-15" href="mymuse.html?page=mymuse"
                                 data-page="mymuse">MyMuse</a>
-                            <a class="dropdown-item text-white fs-15" href="additionalprojects.html?page=additionalprojects"
-                                data-page="additionalprojects"> Additional Projects</a>
+                            <a class="dropdown-item text-white fs-15"
+                                href="additionalprojects.html?page=additionalprojects" data-page="additionalprojects">
+                                Additional Projects</a>
                         </div>
                     </div>
 
@@ -123,15 +125,84 @@
         <div class="container ">
 
             <!-- Top section with the title, description, and date -->
-            <div class="titleSection">
+            <div class="titleSection" style="padding-bottom:25px">
                 <h6 class="display-4 text-left text-sm font-weight-bold" style="color:#343330">Karoshi
                 </h6>
                 <h5 class="underText text-left font-weight-normal mb-5 mt-2" style="color: #343330;">
-                    Coming soon!
-                    <span class="date float-right font-italic" style="color: #9D231B;">August 2023 - December 2023</span>
+                    A crazy platformer game with a twist!
+                    <span class="date float-right font-italic" style="color: #9D231B;">August 2023 - December
+                        2023</span>
                 </h5>
             </div>
 
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <p class="slideInRight">During my sixth semester in my undergraduate degree at UT Dallas, I enrolled
+                        in the course
+                        known as "Software Engineering." Over the course of the semester, I, along with 4 other
+                        teammates would develop the
+                        interactive and cohesive game known as Karoshi.
+                    </p>
+
+                    <br>
+
+                    <p class="slideInRight">
+                        Karoshi was an extremely intuitive side project that I had honor to be a part of. The game has
+                        two levels, with the same objective; to reach the end.
+                        During both levels you will encounter different obstactles that you have to overcome. Below, you
+                        can find a download
+                        link to Karoshi to play it yourself, along with the GitHub associated with the project.
+                    </p>
+
+
+                    <!-- GitHub + Karoshi download button -->
+                    <div class="text-left mt-4 slide-in-right" style="padding-bottom:45px">
+                        <a href="https://github.com/UTDClassroomOrg/courseproject-cse3354-f23-cse3354-f23_group12"
+                            target="_blank">
+                            <button class="btn btn-md fade-in-view custom-button custom-border-radius">GitHub</button>
+                        </a>
+                        <button class="custom-button2 custom-border-radius fade-in-view btn btn-md ml-2">
+                            <a href=".\Pictures\OtherPictures\Karoshi.gfar" download>Download Game</a>
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12 pl-lg-5">
+                    <div class="row">
+
+                        <!-- First column of pictures -->
+                        <div class="col-sm-4 col-6 pt-0 pb-1 pr-1 pl-1">
+                            <img src=".\Pictures\ProjectsPictures\karoshi1.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" alt="">
+                            <img src=".\Pictures\ProjectsPictures\karoshi2.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" alt="">
+                            <img src=".\Pictures\ProjectsPictures\karoshi3.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" alt="">
+                        </div>
+
+                        <!-- Second column of pictures -->
+                        <div class="col-sm-4 col-6 pt-0 pb-1 pr-1 pl-1">
+                            <img src=".\Pictures\ProjectsPictures\karoshi4.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" style="animation-delay:.2s" alt="">
+                            <img src=".\Pictures\ProjectsPictures\karoshi5.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" style="animation-delay:.2s" alt="">
+                            <img src=".\Pictures\ProjectsPictures\karoshi6.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" style="animation-delay:.2s" alt="">
+                        </div>
+
+                        <!-- Third column of pictures -->
+                        <div class="col-sm-4 col-12 pt-0 pb-1 pr-1 pl-1">
+                            <img src=".\Pictures\ProjectsPictures\karoshi7.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" style="animation-delay:.4s" alt=""
+                                data-caption="My upcoming summer 2024 internship as a software development intern at Signet Jewelers in Dallas, TX.">
+                            <img src=".\Pictures\ProjectsPictures\karoshi8.png"
+                                class="img-fluid img growOnHover fade-in-view mb-2" style="animation-delay:.4s" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -228,6 +299,7 @@
     <script src="JSComponents/footer.js"></script>
     <script src="JSComponents/slideInRightView.js"></script>
     <script src="JSComponents/slideInLeftView.js"></script>
+    <script src="JSComponents/fadeInView.js"></script>
 
 </body>
 
