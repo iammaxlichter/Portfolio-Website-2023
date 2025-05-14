@@ -26,6 +26,9 @@
     color: #9D231B;
     background-color: #fbfbfb;
     border-color: #9D231B;
+    display: inline-flex;
+    align-items: center;       
+    justify-content: center;  
 }
 .custom-button2 a{
     color: #9D231B;

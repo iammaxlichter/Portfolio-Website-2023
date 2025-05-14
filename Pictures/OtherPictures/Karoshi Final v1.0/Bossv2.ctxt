@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Bossv2
+comment1.params=h\ s
+comment1.target=Bossv2(int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ attack()
+comment4.params=
+comment4.target=void\ initSpinAnimation()
+comment5.params=
+comment5.target=void\ animateSpinRight()
+comment6.params=
+comment6.target=void\ animateSpinLeft()
+numComments=7
