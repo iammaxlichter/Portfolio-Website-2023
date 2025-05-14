@@ -1,0 +1,71 @@
+
+.img-fluid{
+    width:60%
+}
+
+/*Download button*/
+.custom-button {
+    width: 50%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; 
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+}
+
+.custom-button:hover {
+    background-color: #8D201B;
+    color:#fbfbfb; 
+}
+
+
+/*Live Website button*/
+.custom-button2 {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #9D231B;
+    background-color: #fbfbfb;
+    border-color: #9D231B;
+    display: inline-flex;
+    align-items: center;       
+    justify-content: center;  
+}
+.custom-button2 a{
+    color: #9D231B;
+    text-decoration: none;
+}
+.custom-button2:hover {
+    background-color: #8D201B; 
+    border-color: #8D201B;
+    color: #fbfbfb;
+}
+.custom-button2:hover a{
+    color: #fbfbfb;
+}
+
+.font-underline {
+    text-decoration: underline;
+}
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) { 
+
+    .display-4 {
+        font-size: 2rem;
+    }
+    .underText{
+        font-size: 1rem
+    }
+
+    .date{
+        transform:translateY(50%)
+    }
+    .titleSection{
+        margin-top:-50px;
+    }
+}
+
+
