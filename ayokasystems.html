@@ -126,51 +126,93 @@
                 <h6 class="display-4 text-left font-weight-bold text-sm" style="color:#343330">
                     Ayoka Systems</h6>
                 <h5 class="underText text-left font-weight-normal mb-4 mt-2" style="color: #343330;">
-                    My current role as a Software Engineer
-                    <span class="date float-right font-italic" style="color: #9D231B;">Aug. 2024 - Present</span>
+                    A full-stack experience as a Software Engineer
+                    <span class="date float-right font-italic" style="color: #9D231B;">Aug. 2024 - May 2025</span>
                 </h5>
             </div>
 
-            <!-- Giant singular column for the content -->
+            <!-- Detailed internship recap at Ayoka Systems -->
             <div class="col-md-9 col-12 mx-auto p-0 mt-3">
 
-                <!-- First paragraph -->
+                <!-- Paragraph 1: Role & Context -->
                 <p class="slide-in-bottom text-left fs-15 pt-5">
-                    Since August 2024, I've been working as a <span class="font-weight-bold">Software Engineering Intern
-                        at Ayoka Systems</span>,
-                    where I serve as a <span class="font-weight-bold">primary developer</span> for a widely used web
-                    application accessed by
-                    hundreds of users daily across the United States. Utilizing the .NET framework with C#, JavaScript,
-                    and SQL, I focus on
-                    expertly fixing bugs, adding new features, and enhancing overall web application performance and
-                    reliability.
-                    <br>
+                    From <span class="font-underline">August 2024 through May 2025</span>, I interned as the
+                    <span class="font-weight-bold">lead developer</span> on Ayoka Systems’
+                    <span class="font-italic">physician-facing web portal</span>—built on a legacy
+                    <span class="font-weight-bold">.NET</span> stack with <span
+                        class="font-weight-bold">ADX.Core/ADX.Data</span> layers—used by clinics across the
+                    <span class="font-underline">Western Hemisphere</span> to track patient <span class="font-bold">pain
+                        indices</span> and treatment progress. As the
+                    go-to engineer, I owned the full lifecycle of critical fixes and enhancements, ensuring every
+                    physician saw <span class="font-italic">accurate, up-to-date data</span> when logging in.
                 </p>
+
                 <div class="row">
                     <div class="col-md-6 col-10 text-center mx-auto mt-4 mb-5">
                         <img class="img-fluid growOnHover slide-in-bottom"
-                            src=".\Pictures\ExperiencePictures\ayokaLogo.jpeg" alt="ayoka systems logo">
+                            src="./Pictures/ExperiencePictures/ayokaLogo.jpeg" alt="Ayoka Systems logo">
                     </div>
                 </div>
-                <!-- Second paragraph -->
+
+                <!-- Paragraph 2: Bug Resolution & Performance -->
                 <p class="slide-in-bottom text-left fs-15">
-                    In my role, I <span class="font-underline">collaborate closely</span> with a team of skilled
-                    developers to tackle complex software challenges. By leveraging object-oriented programming 
-                    principles in both <span class="font-weight-bold">Java and C#</span>, I've been able to build 
-                    scalable, client-focused solutions that address intricate data and performance
-                    requirements. My work often involves <span class="font-italic">advanced SQL data manipulation</span>
-                    to resolve client concerns, ensuring that our applications meet the highest standards of quality and
-                    efficiency.
+                    I tackled a broad spectrum of bugs: mis-firing <span class="font-weight-bold">LINQ queries</span>
+                    that omitted patient records, pages timing out under heavy load, and UI components failing to
+                    communicate correctly. Using Visual Studio’s debugging and performance-profiling tools, I traced
+                    issues back to <span class="font-weight-bold">inefficient SQL joins</span>, <span
+                        class="font-underline">missing indexes</span>, and stale cache configurations—then rewrote
+                    queries, added indexes, and introduced targeted <span class="font-italic">server-side caching</span>
+                    to reduce load times by up to <span class="font-weight-bold">60%</span>. Every fix included <span
+                        class="font-italic">automated regression tests</span> to prevent regressions in future releases.
                 </p>
 
+                <!-- Paragraph 3: Development Workflow & Database Management -->
                 <p class="slide-in-bottom text-left fs-15">
-                    Working at Ayoka Systems has been an <span class="font-weight-bold">invaluable experience</span> that has allowed 
-                    me to make significant contributions to real-world projects. Each day presents new opportunities to learn and 
-                    apply <span class="font-underline">cutting-edge debugging and problem-solving techniques</span>. I'm proud to 
-                    be part of a team that continually drives measurable improvements and delivers exceptional value to our clients.
+                    We adopted a <span class="font-underline">trunk-based workflow</span>: I used
+                    <span class="font-weight-bold">SourceTree</span> for local branch management, created short-lived
+                    <span class="font-weight-bold">GitLab</span> feature branches, and opened merge requests with
+                    peer code reviews and automated CI checks. For all database work—schema changes, migrations, and
+                    ad-hoc verification—I relied on
+                    <span class="font-italic">DBeaver</span> to explore table relationships visually, write complex SQL
+                    scripts, and preview data before committing
+                    <span class="font-weight-bold">Entity Framework migrations</span>, guaranteeing consistency across
+                    our dev, staging, and production environments.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6 col-10 text-center mx-auto mt-4 mb-5">
+                        <img class="img-fluid growOnHover slide-in-bottom"
+                            src="./Pictures/ExperiencePictures/dotnetLogo.jpg" alt=".NET logo">
+                    </div>
+                </div>
+
+                <!-- Paragraph 4: Feature Enhancements & UI/UX -->
+                <p class="slide-in-bottom text-left fs-15">
+                    On the feature front, I redesigned the <span class="font-weight-bold">initial patient
+                        assessment</span> flow to prioritize
+                    <span class="font-underline">accessibility for elderly users</span>: I updated the UI with
+                    <span class="font-italic">larger touch targets</span>, clear step-by-step instructions, and built-in
+                    validation messages that reflect our
+                    business-logic rules (e.g., pain-scale thresholds). Behind the scenes, I added new tables and
+                    columns via EF migrations and populated them with seed data using <span
+                        class="font-weight-bold">LINQ queries</span>. I also modularized the assessment code into
+                    reusable C# services, making future enhancements faster and more maintainable.
+                </p>
+
+                <!-- Paragraph 5: Salesforce Integration Highlight -->
+                <p class="slide-in-bottom text-left fs-15 mb-5">
+                    The pinnacle of my internship was architecting a <span class="font-italic">bidirectional Salesforce
+                        integration</span>. I registered a
+                    <span class="font-weight-bold">Connected App</span> in Salesforce, generated <span
+                        class="font-underline">JWT certificates</span>, and built secure
+                    <span class="font-italic">ASP.NET Web API endpoints</span> to issue and validate tokens. In C#, I
+                    mapped our Patient and Attorney entities to Salesforce objects and wrote
+                    <span class="font-weight-bold">Apex classes/triggers</span> to mirror create/update operations both
+                    directions. Now, whenever a clinician adds or updates a patient in Salesforce, the web portal DB
+                    updates instantly—and vice versa—ensuring unified, <span class="font-italic">error-proof data</span>
+                    across systems.
                 </p>
             </div>
-
         </div>
     </div>
     <footer class="footerCurrent text-black text-center">
