@@ -16,13 +16,13 @@
     <link rel="icon" href="Pictures/OtherPictures/logoBlack.png" type="image/png">
     <link rel="stylesheet" href="CSSComponents/RequiredComponents/footer.css">
     <link rel="stylesheet" href="CSSComponents/RequiredComponents/navbar.css">
-    <link rel="stylesheet" href="CSSComponents/ExperienceComponents/ayokasystems.css">
+    <link rel="stylesheet" href="CSSComponents/ProjectComponents/bobalite.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/shareModal.css">
+    <link rel="stylesheet" href="CSSComponents/ExtraComponents/growAnimation.css">
     <link rel="stylesheet" href="CSSComponents/ExtraComponents/variousAnimations.css">
-    <link rel="stylesheet" href="CSSComponents/ExtraComponents/slideInBottomView.css">
 
     <!-- <link rel="icon" href="Pictures/logo.png" type="image/x-icon"> -->
-    <title>Ayoka Systems</title>
+    <title>BobaLite</title>
 
 </head>
 
@@ -38,6 +38,7 @@
                     style="transform:translate(-20%, -5%); color: #343330" height="48" class="d-inline-block align-top">
                 <!-- <span style="color:#fff">Max Lichter</span> -->
             </a>
+
 
             <!-- Hamburger button code -->
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -90,8 +91,7 @@
                         <div class="dropdown-menu dropdown-menu-left-custom"
                             style="background-color: #343330; border:2px solid #343330;"
                             aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-white fs-15"
-                                href="paycom.html?page=paycom"
+                            <a class="dropdown-item text-white fs-15" href="paycom.html?page=paycom"
                                 data-page="paycom">Paycom </a>
                             <a class="dropdown-item text-white fs-15" href="ayokasystems.html?page=ayokasystems"
                                 data-page="ayokasystems">Ayoka Systems </a>
@@ -123,61 +123,88 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px">
-        <div class="container">
+
+
+    <div class="container-fluid" style="background-color: #fbfbfb; padding-top: 100px; padding-bottom: 100px;">
+        <div class="container ">
 
             <!-- Top section with the title, description, and date -->
             <div class="titleSection">
-                <h6 class="display-4 text-left font-weight-bold text-sm" style="color:#343330">
-                    Ayoka Systems</h6>
-                <h5 class="underText text-left font-weight-normal mb-4 mt-2" style="color: #343330;">
-                    My current role as a Software Engineer
-                    <span class="date float-right font-italic" style="color: #9D231B;">Aug. 2024 - Present</span>
+                <h6 class="display-4 text-left text-sm font-weight-bold" style="color:#343330">BobaLite
+                </h6>
+                <h5 class="underText text-left font-weight-normal mb-5 mt-2" style="color: #343330;">
+                    A website to share low-calorie boba tea with friends and beyond.
+                    <span class="date float-right font-italic" style="color: #9D231B;">June 2025 - Aug. 2025</span>
                 </h5>
             </div>
 
-            <!-- Giant singular column for the content -->
-            <div class="col-md-9 col-12 mx-auto p-0 mt-3">
+            <div class="row">
 
-                <!-- First paragraph -->
-                <p class="slide-in-bottom text-left fs-15 pt-5">
-                    Since August 2024, I've been working as a <span class="font-weight-bold">Software Engineering Intern
-                        at Ayoka Systems</span>,
-                    where I serve as a <span class="font-weight-bold">primary developer</span> for a widely used web
-                    application accessed by
-                    hundreds of users daily across the United States. Utilizing the .NET framework with C#, JavaScript,
-                    and SQL, I focus on
-                    expertly fixing bugs, adding new features, and enhancing overall web application performance and
-                    reliability.
-                    <br>
-                </p>
-                <div class="row">
-                    <div class="col-md-6 col-10 text-center mx-auto mt-4 mb-5">
-                        <img class="img-fluid growOnHover slide-in-bottom"
-                            src=".\Pictures\ExperiencePictures\ayokaLogo.jpeg" alt="ayoka systems logo">
+                <!-- Lefthand side with the paragraphs detailing GymThis-->
+                <div class="col-md-6 col-12 pr-lg-5 slideInLeft mt-3 mb-4">
+                    <p class="text-left fs-15">
+                        This is a full-stack e-commerce web application that my friends and I developed to bring our
+                        concept of
+                        low-calorie boba tea to market. Built using <strong>ASP.NET Core MVC</strong> with <strong>Razor
+                            Pages</strong> for
+                        server-rendered views, it features a modular architecture with <strong>Entity Framework
+                            Core</strong> for database
+                        access and <strong>SQLite</strong> for local development.
+
+                        <br><br>
+                        <span class="font-italic">
+                            BobaLite supports dynamic product management, including category filtering, variant
+                            handling, and stock
+                            tracking. The platform includes a fully custom cart and checkout flow, order persistence via
+                            a normalized
+                            database schema, and email notifications powered by <strong>SendGrid</strong>. Frontend
+                            interactivity is handled
+                            with <strong>JavaScript ES6 modules</strong>, while <strong>Docker</strong> ensures
+                            reproducible deployments and
+                            <strong>Render</strong> is used for cloud hosting and CI/CD.
+                        </span>
+
+                        <br><br>
+                        Admin functionality is protected via <strong>cookie-based authentication</strong> and supports
+                        secure product CRUD
+                        operations, image uploads to <code>wwwroot</code>, and real-time stock updates. The site’s
+                        responsive UI leverages
+                        <strong>modular CSS</strong> for maintainable styling and a search feature that preloads
+                        matching products as the
+                        user types.
+
+                        <br><br>
+                        Below is the GitHub repository for our project. <span class="font-underline">Contact me with
+                            questions or advice
+                            about this project!</span>
+                    </p>
+
+
+                    <!-- GymThis GitHub button -->
+                    <div class="text-left">
+                        <a href="https://github.com/iammaxlichter/GymThis" target="_blank">
+                            <button class="btn btn-md custom-button custom-border-radius">GitHub</button>
+                        </a>
+                        <a href="https://bobalite.onrender.com" target="_blank">
+                            <button class="btn btn-md fade-in-view custom-button2 custom-border-radius ml-3 ">Live
+                                Website</button>
+                        </a>
                     </div>
+
                 </div>
-                <!-- Second paragraph -->
-                <p class="slide-in-bottom text-left fs-15">
-                    In my role, I <span class="font-underline">collaborate closely</span> with a team of skilled
-                    developers to tackle complex software challenges. By leveraging object-oriented programming 
-                    principles in both <span class="font-weight-bold">Java and C#</span>, I've been able to build 
-                    scalable, client-focused solutions that address intricate data and performance
-                    requirements. My work often involves <span class="font-italic">advanced SQL data manipulation</span>
-                    to resolve client concerns, ensuring that our applications meet the highest standards of quality and
-                    efficiency.
-                </p>
 
-                <p class="slide-in-bottom text-left fs-15">
-                    Working at Ayoka Systems has been an <span class="font-weight-bold">invaluable experience</span> that has allowed 
-                    me to make significant contributions to real-world projects. Each day presents new opportunities to learn and 
-                    apply <span class="font-underline">cutting-edge debugging and problem-solving techniques</span>. I'm proud to 
-                    be part of a team that continually drives measurable improvements and delivers exceptional value to our clients.
-                </p>
+                <!-- Picture on the right plus caption below it -->
+                <div class="col-md-6 col-12 pl-lg-5 fadeInGymThis">
+                    <img class="img-fluid img mt-3 mb-2" src=".\Pictures\ProjectsPictures\bobalite.jpeg"
+                        alt="bobalite wireframes figma page">
+                    <p class="text-center fs-15">homepage of the website.</p>
+                </div>
+
             </div>
-
         </div>
     </div>
+
+
     <footer class="footerCurrent text-black text-center">
 
         <!-- Top row, social icons -->
@@ -267,7 +294,6 @@
 
     <script src="JSComponents/navbar.js"></script>
     <script src="JSComponents/footer.js"></script>
-    <script src="JSComponents/slideInBottomView.js"></script>
 
 </body>
 

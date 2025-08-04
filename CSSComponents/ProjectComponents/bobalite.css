@@ -1,0 +1,81 @@
+/*The whole page has the characteristics below*/
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+
+/*Class for font size 15*/
+.fs-15{
+    font-size:15px;
+}
+
+/* underline font */
+.font-underline{
+    text-decoration: underline;
+}
+
+/*Class for custom border radius*/
+.custom-border-radius {
+    border-radius: 5px;
+  }
+
+/*Border for the image*/
+.img{
+    border: 1px solid #343330
+}
+
+/*Hyperlink color and hover*/
+.link {
+    color:#9D231B;
+}
+
+.link:hover {
+    color: #8D201B;
+}
+
+
+/*GitHub button*/
+.custom-button {
+    width: 30%;
+    height: 50px;
+    font-weight: 400;
+    color: #fbfbfb;
+    background-color: #9D231B; 
+}
+
+.custom-button:hover {
+    background-color: #8D201B; 
+    color:#fbfbfb; 
+}
+
+.custom-button2 {
+    width: 40%;
+    height: 50px;
+    font-weight: 400;
+    color: #9D231B;
+    background-color: #fbfbfb;
+    border-color: #9D231B;
+}
+
+.custom-button2:hover {
+    background-color: #8D201B; 
+    border-color: #8D201B;
+    color: #fbfbfb;
+}
+
+
+/*When the screen is small, the title section is adjusted accordingly*/
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem; 
+    }
+    .underText{
+        font-size: .8rem
+    }
+    .date{
+        padding-top:20px;
+    }
+    .titleSection{
+        margin-top:-50px;
+    }
+}
